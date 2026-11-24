@@ -24,7 +24,7 @@ Como funciona
      static/pdf/_conferir/ e avisa — evita repetir o problema de baixar a versão errada.
   4. Depois rode: python3 scripts/bib2json.py
 """
-import argparse, difflib, re, ssl, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
+import argparse, difflib, html as htmllib, re, ssl, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -106,8 +106,23 @@ def metadados(handle):
     html = http(f"{BASE}/xmlui/handle/1884/{handle}?show=full")
     campos = {}
     for k, v in re.findall(r'<td[^>]*label-cell[^>]*>\s*([\w.]+)\s*</td>\s*<td[^>]*>(.*?)</td>', html, flags=re.S):
-        campos.setdefault(k, []).append(re.sub(r"<[^>]+>|\s+", " ", v).strip())
+        campos.setdefault(k, []).append(htmllib.unescape(re.sub(r"<[^>]+>|\s+", " ", v)).strip())
+    # alternativa: metatags da página (DC.title, DC.creator, DCTERMS.issued...)
+    for nome, v in re.findall(r'<meta\s+name="(DC\.\w+|DCTERMS\.\w+|citation_\w+)"[^>]*content="([^"]*)"', html):
+        campos.setdefault("meta." + nome, []).append(htmllib.unescape(v).strip())
+    if not campos.get("dc.title") and not campos.get("meta.DC.title"):
+        dump = Path("/tmp") / f"acervo_{handle}.html"
+        dump.write_text(html, encoding="utf-8")
+        print(f"(sem metadados reconhecidos: item inexistente, restrito ou layout novo; página salva em {dump})", file=sys.stderr)
     return campos
+
+
+PARTICULAS = {"da", "de", "do", "das", "dos", "e"}
+SUFIXOS = {"junior", "júnior", "filho", "neto", "sobrinho"}
+
+
+def nome_proprio(n):
+    return " ".join(w.lower() if w.lower() in PARTICULAS else w.capitalize() for w in n.split())
 
 
 def rascunho_bib(handle, c):
@@ -116,17 +131,19 @@ def rascunho_bib(handle, c):
             if c.get(k):
                 return c[k][0]
         return ""
-    autor = g("dc.contributor.author", "dc.creator")
+    autor = g("dc.contributor.author", "dc.creator", "meta.DC.creator", "meta.citation_author")
     if "," in autor:                       # "Sobrenome, Nome" -> "Nome Sobrenome"
         sob, nome = [x.strip() for x in autor.split(",", 1)]
-        autor = f"{nome} {sob}".title()
-    ano = (g("dc.date.issued", "dc.date.available") or "")[:4]
-    sob = autor.split()[-1] if autor else "XXX"
-    tipo = g("dc.type").lower()
+        autor = f"{nome} {sob}"
+    autor = nome_proprio(autor)
+    ano = (g("dc.date.issued", "meta.DCTERMS.issued", "meta.citation_date", "dc.date.available") or "")[:4]
+    partes = autor.split()
+    sob = next((w for w in reversed(partes) if w.lower() not in SUFIXOS and w.lower() not in PARTICULAS), "XXX")
+    tipo = g("dc.type", "meta.DC.type").lower()
     nivel = "Especialização" if "especializa" in tipo or "lato" in tipo else (
         "Trabalho de Conclusão de Curso" if "gradua" in tipo or "tcc" in tipo else "")
     ent = "phdthesis" if "doutorado" in tipo else "mastersthesis"
-    return (f"@{ent}{{{ano}-UFPR-{sob},\n  author       = {{{autor}}},\n  title        = {{{g('dc.title')}}},\n"
+    return (f"@{ent}{{{ano}-UFPR-{sob},\n  author       = {{{autor}}},\n  title        = {{{g('dc.title', 'meta.DC.title', 'meta.citation_title')}}},\n"
             f"  school       = {{UFPR}},\n" + (f"  type         = {{{nivel}}},\n" if nivel else "") +
             f"  year         = {{{ano}}},\n  url          = {{https://hdl.handle.net/1884/{handle}}},\n  category     = {{thesis}}\n}}")
 
