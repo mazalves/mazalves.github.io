@@ -1,0 +1,51 @@
+{{- /* Egressos orientados: gerado das teses/dissertações de bib/publicacoes.bib (category=thesis). Filtros: nível e ano. */ -}}
+{{- $en := eq site.Language.Lang "en" -}}
+<div class="egressos-wrap">
+<div class="egressos-filtros" role="group" aria-label="{{ if $en }}Filter alumni{{ else }}Filtrar egressos{{ end }}">
+  <button type="button" data-nivel="all" aria-pressed="true">{{ if $en }}All{{ else }}Todos{{ end }}</button>
+  <button type="button" data-nivel="phd" aria-pressed="false">{{ if $en }}PhD{{ else }}Doutorado{{ end }}</button>
+  <button type="button" data-nivel="msc" aria-pressed="false">{{ if $en }}MSc{{ else }}Mestrado{{ end }}</button>
+  <button type="button" data-nivel="spec" aria-pressed="false">{{ if $en }}Specialization{{ else }}Especialização{{ end }}</button>
+  <button type="button" data-nivel="tcc" aria-pressed="false">{{ if $en }}Undergrad (TCC){{ else }}Graduação (TCC){{ end }}</button>
+  <select class="egressos-ano" aria-label="{{ if $en }}Year{{ else }}Ano{{ end }}">
+    <option value="all">{{ if $en }}All years{{ else }}Todos os anos{{ end }}</option>
+    {{- range site.Data.publicacoes.years }}{{ $y := .year }}{{ $has := false }}{{ range .items }}{{ if eq .category "thesis" }}{{ $has = true }}{{ end }}{{ end }}{{ if $has }}<option value="{{ $y }}">{{ $y }}</option>{{ end }}{{ end }}
+  </select>
+  <span class="egressos-status" aria-live="polite"></span>
+</div>
+<table class="ensino-tabela egressos">
+  <thead><tr><th>{{ if $en }}Name{{ else }}Nome{{ end }}</th><th>{{ if $en }}Level{{ else }}Nível{{ end }}</th><th>{{ if $en }}Year{{ else }}Ano{{ end }}</th><th>{{ if $en }}Title{{ else }}Título{{ end }}</th></tr></thead>
+  <tbody>
+  {{- range site.Data.publicacoes.years }}{{ range .items }}{{ if eq .category "thesis" }}
+    {{- $nivel := "msc" }}{{ $label := cond $en "MSc" "Mestrado" }}
+    {{- if eq .type "phdthesis" }}{{ $nivel = "phd" }}{{ $label = cond $en "PhD" "Doutorado" }}
+    {{- else if hasPrefix (.kind | default "") "Especializa" }}{{ $nivel = "spec" }}{{ $label = cond $en "Specialization" "Especialização" }}
+    {{- else if hasPrefix (.kind | default "") "Trabalho de Conclus" }}{{ $nivel = "tcc" }}{{ $label = cond $en "Undergrad (TCC)" "Graduação (TCC)" }}{{ end }}
+    <tr data-nivel="{{ $nivel }}" data-ano="{{ .year }}">
+      <td>{{ index .authors 0 }}{{ if eq .role "co" }} <small>({{ if $en }}co-advised{{ else }}coorient.{{ end }})</small>{{ end }}</td>
+      <td>{{ $label }}</td>
+      <td>{{ .year }}</td>
+      <td>{{ .title }} {{ range .links }}<a href="{{ if hasPrefix .url "/" }}{{ .url | relURL }}{{ else }}{{ .url }}{{ end }}">[{{ .label }}]</a> {{ end }}</td>
+    </tr>
+  {{- end }}{{ end }}{{ end }}
+  </tbody>
+</table>
+</div>
+<script>
+(function () {
+  var w = document.currentScript.previousElementSibling; if (!w) return;
+  var rows = w.querySelectorAll('tbody tr'), btns = w.querySelectorAll('.egressos-filtros button'),
+      sel = w.querySelector('.egressos-ano'), st = w.querySelector('.egressos-status'), nivel = 'all';
+  function up() {
+    var n = 0;
+    rows.forEach(function (r) {
+      var ok = (nivel === 'all' || r.dataset.nivel === nivel) && (sel.value === 'all' || r.dataset.ano === sel.value);
+      r.hidden = !ok; if (ok) n++;
+    });
+    st.textContent = n + ' ' + (n === 1 ? 'item' : 'itens');
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () {
+    btns.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); nivel = b.dataset.nivel; up(); }); });
+  sel.addEventListener('change', up); up();
+})();
+</script>

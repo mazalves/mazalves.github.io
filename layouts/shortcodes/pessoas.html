@@ -1,0 +1,8 @@
+{{- /* {{< pessoas grupo="doutorado" >}} — lista de data/pessoas.json */ -}}
+{{- $g := .Get "grupo" -}}{{- $en := eq site.Language.Lang "en" -}}
+<ul class="pessoas">
+{{- range where site.Data.pessoas.atuais "grupo" $g }}
+  <li><strong>{{ .nome }}</strong>{{ with .desde }} <small>({{ . }})</small>{{ end }}<br>
+    <span>{{ if $en }}{{ .titulo_en | default .titulo }}{{ else }}{{ .titulo }}{{ end }}</span></li>
+{{- end }}
+</ul>

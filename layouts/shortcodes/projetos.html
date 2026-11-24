@@ -1,0 +1,16 @@
+{{- /* Lista de projetos: data/projetos.json */ -}}
+{{- $en := eq site.Language.Lang "en" -}}
+<div class="projetos">
+{{- range sort site.Data.projetos.projetos "inicio" "desc" }}
+  <article class="projeto">
+    <h3>{{ if $en }}{{ .titulo_en | default .titulo }}{{ else }}{{ .titulo }}{{ end }}</h3>
+    <p class="projeto-meta">
+      <span>{{ .inicio }}–{{ with .fim }}{{ . }}{{ else }}{{ if $en }}present{{ else }}atual{{ end }}{{ end }}</span>
+      <span>{{ .papel }}</span>
+      {{ with .financiador }}<span>{{ . }}</span>{{ end }}
+    </p>
+    {{ with (cond $en .resumo_en .resumo) }}<p>{{ . }}</p>{{ end }}
+    {{ with .colaboradores }}<p class="projeto-colab"><strong>{{ if $en }}Collaborators:{{ else }}Colaboradores:{{ end }}</strong> {{ . }}</p>{{ end }}
+  </article>
+{{- end }}
+</div>

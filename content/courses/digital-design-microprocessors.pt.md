@@ -1,0 +1,8 @@
+---
+title: "Projetos Digitais e Microprocessadores"
+draft: false
+aliases:
+  - "/dis-proj-digitais-e-microprocessadores/"
+---
+<h2>Conteúdo Sugerido para <br>Disciplina de Arquitetura de Computadores</h2>		
+		<ul><li><p>Apresentação e revisão de lógica e simplificações</p></li><li><p>Revisão de circuitos combinacionais</p></li><li><p>Implementação em CMOS, transistores e portas lógicas</p></li><li><p>Implementação em CMOS, circuitos combinacionais</p></li><li><p>Atrasos, tempo de propagação e contaminação</p></li><li><p>Circuitos de memórias RAM</p></li><li><p>Lab.: Modelagem estrutural em VHDL</p></li><li><p>Lab.: Modelagem de circuitos combinacionais</p></li><li><p>ULA, somador e subtrator com e sem propagação</p></li><li><p>Lab.: Modelagem de somadores rápidos</p></li><li><p>Multiplicador combinacional</p></li><li><p>Circuitos sequênciais, Latches e Flip-Flops com atrasos</p></li><li><p>Registradores e contadores</p></li><li><p>Lab.: Modelagem de circuitos sequênciais.</p></li><li><p>Máquinas de estados finitos Moore e Mealy</p></li><li><p>Lab.: Modelagem de contadores simples</p></li><li><p>Setup e hold time (clock skew setup)</p></li><li><p>Exemplos de circuitos complexos</p></li><li><p>MIPS: Conjunto de instruções</p></li><li><p>MIPS: Instruções ULA e Memória</p></li><li><p>MIPS: Instruções de controle de fluxo, iteração</p></li><li><p>MIPS: Suporte a funções, registros de ativação, recursão</p></li><li><p>MIPS: Tipos de instruções (R, I, J) e operações ADD,ORI,LW,SW,BEQ,J</p></li><li><p>MIPS: Circuito de dados, Temporização e atrasos</p></li><li><p>Sistemas de memória e protocolo de comunicação</p></li></ul>

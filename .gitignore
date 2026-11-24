@@ -1,0 +1,10 @@
+/public/
+/resources/
+.hugo_build.lock
+.DS_Store
+__pycache__/
+
+# Dados pessoais de alunos: nunca versionar listagens originais do SIGA
+SIGA*.html
+*.siga.html
+static/pdf/_conferir/

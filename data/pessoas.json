@@ -1,0 +1,31 @@
+{
+  "_aviso": "Fonte: Lattes (orientações em andamento, 23/11/2026). Revise: a lista do Lattes pode estar defasada. 'grupo': doutorado | mestrado",
+  "atuais": [
+    {
+      "nome": "Paulo Henrique Bernardi",
+      "grupo": "doutorado",
+      "desde": "2024",
+      "titulo": "PISC: A new computer design philosophy"
+    },
+    {
+      "nome": "Rodrigo Machniewicz Sokulski",
+      "grupo": "doutorado",
+      "desde": "2023",
+      "titulo": "Estratégias para o processamento paralelo próximo à memória",
+      "titulo_en": "Strategies for parallel near-memory processing"
+    },
+    {
+      "nome": "Javan Ataíde de Oliveira Júnior",
+      "grupo": "doutorado",
+      "desde": "2023",
+      "titulo": "Near-data processing using ReRAM for data compression"
+    },
+    {
+      "nome": "Debora Terra Cachucho da Silva",
+      "grupo": "mestrado",
+      "desde": "2024",
+      "titulo": "Caracterização detalhada do processo de eletrificação em nuvens: aprendizagem de máquina e dados de radar",
+      "titulo_en": "Detailed characterization of cloud electrification: machine learning on radar data"
+    }
+  ]
+}

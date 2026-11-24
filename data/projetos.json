@@ -1,0 +1,115 @@
+{
+ "_aviso": "Fonte: Lattes (projetos de pesquisa) + proposta do projeto PQ. Edite à mão; fim=null => em andamento. Para novos projetos, copie um bloco.",
+ "projetos": [
+  {
+   "inicio": 2024,
+   "fim": null,
+   "papel": "Coordenador",
+   "financiador": "CNPq (Bolsa de Produtividade em Pesquisa, PQ-2)",
+   "titulo": "Memórias inteligentes para o processamento de alto desempenho eficiente",
+   "titulo_en": "Smart memories for efficient high-performance processing",
+   "resumo": "Estuda como adotar em larga escala memórias capazes de executar pequenas computações, reduzindo a movimentação de dados entre memória e processador. Explora o paralelismo interno das DRAM (DDR e 3D, como HMC e HBM) com unidades funcionais vetoriais simples, com foco em arquiteturas PIM, algoritmos para PIM, ferramentas de simulação e reuso de dados.",
+   "resumo_en": "Studies large-scale adoption of memories that perform small computations, cutting data movement between memory and processor. Exploits the internal parallelism of DRAM (DDR and 3D-stacked, such as HMC and HBM) with simple vector functional units, covering PIM architectures, PIM algorithms, simulation tools and data reuse.",
+   "colaboradores": "LBD e SecRET (UFPR), GPPD e LSE (UFRGS), eXascale Infolab (Univ. Fribourg)"
+  },
+  {
+   "inicio": 2019,
+   "fim": 2022,
+   "papel": "Coordenador",
+   "financiador": "CNPq (Universal)",
+   "titulo": "Universal: Memórias Inteligentes para Computação de BigData",
+   "titulo_en": "Universal: Smart Memories for Big Data Computing",
+   "resumo": "Identifica as operações mais importantes que uma memória inteligente deve suportar e investiga mecanismos de tradução automática de código legado para essas memórias, com impacto em HPC, bancos de dados, inteligência artificial e segurança.",
+   "resumo_en": "Identifies the key operations a smart memory should support and investigates automatic translation of legacy code to such memories, with impact on HPC, databases, AI and security.",
+   "colaboradores": "Luigi Carro, Eduardo Cunha de Almeida, André Grégio"
+  },
+  {
+   "inicio": 2018,
+   "fim": 2023,
+   "papel": "Coordenador",
+   "financiador": "Instituto Serrapilheira",
+   "titulo": "Efficient Smart Memories for Data Intensive Computing",
+   "titulo_en": "Efficient Smart Memories for Data Intensive Computing (Memórias Inteligentes Eficientes para Computação Intensiva de Dados)",
+   "resumo": "Curto prazo: simulação rápida e geração de código para arquiteturas PIM e conversão de bancos de dados para PIM. Longo prazo: tradução dinâmica de software legado e execução fora de ordem dentro das arquiteturas PIM, mantendo restrições de área e energia.",
+   "resumo_en": "Short term: fast simulation and code generation for PIM and conversion of database systems to PIM. Long term: dynamic translation of legacy software and out-of-order execution inside PIM architectures under area and energy constraints.",
+   "colaboradores": "Luigi Carro, Paulo C. Santos, Eduardo Cunha de Almeida, André Grégio, Rafael Fão de Moura"
+  },
+  {
+   "inicio": 2016,
+   "fim": 2023,
+   "papel": "Coordenador",
+   "financiador": "",
+   "titulo": "Desempenho versus Consumo Energético, um Desafio para Arquitetura e Programação Paralela",
+   "titulo_en": "Performance versus Energy Consumption: a Challenge for Parallel Architecture and Programming",
+   "resumo": "",
+   "resumo_en": "",
+   "colaboradores": "Eduardo Cunha de Almeida, Ricardo Köhler, Luis Carlos Erpen de Bona"
+  },
+  {
+   "inicio": 2012,
+   "fim": 2015,
+   "papel": "Participante",
+   "financiador": "CNPq (Universal)",
+   "titulo": "Universal: EXASCALE COMPUTING — Desempenho versus Consumo Energético",
+   "titulo_en": "Universal: EXASCALE COMPUTING — Performance versus Energy Consumption",
+   "resumo": "Meta 2 (Memória): arquiteturas e técnicas para alto desempenho e baixo consumo em sistemas de memória cache.",
+   "resumo_en": "Goal 2 (Memory): architectures and techniques for high performance and low energy in cache memory systems.",
+   "colaboradores": "Coordenação: Philippe O. A. Navaux (UFRGS)"
+  },
+  {
+   "inicio": 2010,
+   "fim": 2013,
+   "papel": "Participante",
+   "financiador": "CNPq",
+   "titulo": "Atmosfera Massiva II: Escalabilidade de Modelos Atmosféricos para Arquiteturas Heterogêneas com 10k Cores",
+   "titulo_en": "Massive Atmosphere II: Scalability of Atmospheric Models on Heterogeneous 10k-Core Architectures",
+   "resumo": "Problemas de acesso às memórias cache em processadores multicore.",
+   "resumo_en": "Cache memory access problems in multicore processors.",
+   "colaboradores": "Coordenação: Philippe O. A. Navaux (UFRGS)"
+  },
+  {
+   "inicio": 2009,
+   "fim": 2013,
+   "papel": "Coordenador (meta 3.1)",
+   "financiador": "FAPERGS/CNPq (PRONEX)",
+   "titulo": "GREEN-GRID: Computação de Alto Desempenho Sustentável",
+   "titulo_en": "GREEN-GRID: Sustainable High-Performance Computing",
+   "resumo": "Meta 3.1: projeto e implementação de uma infraestrutura de Green Computing.",
+   "resumo_en": "Goal 3.1: design and implementation of a Green Computing infrastructure.",
+   "colaboradores": "Philippe O. A. Navaux, Avelino F. Zorzo"
+  },
+  {
+   "inicio": 2009,
+   "fim": 2012,
+   "papel": "Participante",
+   "financiador": "CNPq (Universal)",
+   "titulo": "Universal: Mapeamento de Processos Paralelos em Arquiteturas Many-Core Heterogêneas",
+   "titulo_en": "Universal: Mapping Parallel Processes on Heterogeneous Many-Core Architectures",
+   "resumo": "Meta 3: melhorar o desempenho estático de processos considerando a hierarquia de memória cache.",
+   "resumo_en": "Goal 3: improve static process performance considering the cache memory hierarchy.",
+   "colaboradores": "Coordenação: Philippe O. A. Navaux (UFRGS)"
+  },
+  {
+   "inicio": 2007,
+   "fim": 2010,
+   "papel": "Participante",
+   "financiador": "CAPES",
+   "titulo": "Atmosfera Massiva: Impacto de Novas Arquiteturas de Processadores em Modelos Atmosféricos de Produção",
+   "titulo_en": "Massive Atmosphere: Impact of New Processor Architectures on Production Atmospheric Models",
+   "resumo": "Avaliação de desempenho paralelo do BRAMS nas arquiteturas multicore disponíveis.",
+   "resumo_en": "Parallel performance evaluation of BRAMS on available multicore architectures.",
+   "colaboradores": "Coordenação: Philippe O. A. Navaux (UFRGS)"
+  },
+  {
+   "inicio": 2007,
+   "fim": 2009,
+   "papel": "Participante",
+   "financiador": "CNPq (Universal)",
+   "titulo": "Universal: Influência das Caches no Desempenho das Arquiteturas Multi-Core / Multithreaded",
+   "titulo_en": "Universal: Influence of Caches on Multi-Core / Multithreaded Architecture Performance",
+   "resumo": "Etapa 7: projeto de sistemas de memória que aumentem o desempenho das cargas de trabalho.",
+   "resumo_en": "Stage 7: design of memory systems that increase workload performance.",
+   "colaboradores": "Coordenação: Philippe O. A. Navaux (UFRGS)"
+  }
+ ]
+}

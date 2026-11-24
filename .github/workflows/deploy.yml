@@ -1,0 +1,55 @@
+name: Publicar no GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Garante que data/publicacoes.json está em dia com bib/publicacoes.bib
+      - name: Validar e regenerar publicações
+        run: |
+          python3 scripts/bib2json.py
+          git diff --exit-code data/publicacoes.json || {
+            echo "::error::data/publicacoes.json está desatualizado. Rode 'python3 scripts/bib2json.py' e faça commit."
+            exit 1
+          }
+
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.141.0"
+          extended: true
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

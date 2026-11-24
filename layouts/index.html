@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ $image := .Params.hero_image }}
+<section class="home-hero">
+  <div class="home-portrait">{{ if $image }}<img src="{{ $image }}" alt="Marco Antonio Zanata Alves" />{{ end }}</div>
+  <div class="home-intro">
+    <p class="eyebrow">{{ if eq .Language.Lang "en" }}Professor and researcher{{ else }}Professor e pesquisador{{ end }}</p>
+    <h1><span>Marco Antonio</span><span>Zanata Alves</span></h1>
+    <p class="lead">{{ if eq .Language.Lang "en" }}Department of Informatics · Federal University of Paraná · Curitiba, Brazil{{ else }}Departamento de Informática · Universidade Federal do Paraná · Curitiba, Brasil{{ end }}</p>
+    <p class="home-badges"><span>{{ if eq .Language.Lang "en" }}CNPq Research Fellow · PQ-2{{ else }}Bolsista de Produtividade CNPq · PQ-2{{ end }}</span><span>{{ if eq .Language.Lang "en" }}Vice-coordinator, NMCC (2026–2027){{ else }}Vice-coordenador do NMCC (2026–2027){{ end }}</span></p>
+    <p class="research-tags">{{ if eq .Language.Lang "en" }}Computer Architecture · High-Performance Computing · Memory Systems · In-Memory Processing{{ else }}Arquitetura de Computadores · Computação de Alto Desempenho · Sistemas de Memória · Processamento em Memória{{ end }}</p>
+    <p class="home-summary">{{ if eq .Language.Lang "en" }}I am a professor and researcher in computer architecture and high-performance computing, focusing on memory systems, in-memory processing and efficient computing architectures.{{ else }}Sou professor e pesquisador na área de arquitetura de computadores e computação de alto desempenho, com foco em sistemas de memória, processamento em memória e arquiteturas eficientes.{{ end }}</p>
+  </div>
+</section>
+<section class="home-body prose">{{ .Content }}</section>
+{{ $en := eq .Language.Lang "en" }}
+<section class="home-feed">
+  {{ with site.Data.noticias.itens }}
+  <div>
+    <h2>{{ if $en }}News{{ else }}Notícias{{ end }}</h2>
+    <ul class="feed-list">
+      {{ range first 5 . }}<li><time>{{ .data }}</time> {{ (cond $en .en .pt) | markdownify }}</li>{{ end }}
+    </ul>
+  </div>
+  {{ end }}
+  <div>
+    <h2>{{ if $en }}Recent publications{{ else }}Publicações recentes{{ end }}</h2>
+    <ul class="feed-list">
+      {{ $n := 0 }}
+      {{ range site.Data.publicacoes.years }}{{ range .items }}{{ if and (lt $n 6) (eq .category "paper") }}{{ $n = add $n 1 }}
+        <li><time>{{ .year }}</time> <a href="{{ (site.GetPage "/publications").RelPermalink }}#{{ .key }}">{{ .title }}</a>{{ with .award }} <span class="badge-award">★ {{ . }}</span>{{ end }}<br><small>{{ .venue }}</small></li>
+      {{ end }}{{ end }}{{ end }}
+    </ul>
+    <p><a href="{{ (site.GetPage "/publications").RelPermalink }}">{{ if $en }}All publications →{{ else }}Todas as publicações →{{ end }}</a></p>
+  </div>
+</section>
+
+{{ end }}

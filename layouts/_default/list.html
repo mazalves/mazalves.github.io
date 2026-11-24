@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article class="content-page">
+  <p class="eyebrow">{{ if eq .Language.Lang "en" }}Academic profile{{ else }}Perfil acadêmico{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+  {{ range .Pages }}<p><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></p>{{ end }}
+</article>
+{{ end }}

@@ -1,0 +1,15 @@
+{{- /* {{< ensino nivel="graduacao" curso="BCC" >}} — lista disciplinas de data/ensino.json (gerado por scripts/siga_para_json.py). */ -}}
+{{- $nivel := .Get "nivel" -}}{{- $curso := .Get "curso" -}}
+<table class="ensino-tabela">
+  <thead><tr><th>{{ if eq site.Language.Lang "en" }}Course{{ else }}Disciplina{{ end }}</th><th>{{ if eq site.Language.Lang "en" }}Offered{{ else }}Ofertas{{ end }}</th><th>{{ if eq site.Language.Lang "en" }}Period{{ else }}Período{{ end }}</th></tr></thead>
+  <tbody>
+  {{- range where (where site.Data.ensino.disciplinas "nivel" $nivel) "curso" $curso }}
+    <tr>
+      <td><strong>{{ .nome }}</strong> <small>{{ .codigo }}</small>
+        {{- with .ementa }}<details><summary>{{ if eq site.Language.Lang "en" }}Syllabus (pt){{ else }}Ementa{{ end }}</summary>{{ . }}</details>{{ end }}</td>
+      <td>{{ len .periodos }}</td>
+      <td>{{ index (last 1 .periodos) 0 }} – {{ .ultimo }}</td>
+    </tr>
+  {{- end }}
+  </tbody>
+</table>

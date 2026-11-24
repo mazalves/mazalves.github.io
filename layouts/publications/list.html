@@ -1,0 +1,70 @@
+{{/* Lista de publicações. Dados: data/publicacoes.json (gerado por scripts/bib2json.py). */}}
+{{ define "main" }}
+{{ $en := eq .Language.Lang "en" }}
+{{ $years := site.Data.publicacoes.years }}
+<article class="content-page publications-page">
+  <p class="eyebrow">{{ if $en }}Academic profile{{ else }}Perfil acadêmico{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+
+  {{ if $years }}
+    <div class="publication-filters" role="group" aria-label="{{ if $en }}Filter publications{{ else }}Filtrar publicações{{ end }}">
+      <button type="button" data-filter="all" aria-pressed="true">{{ if $en }}All{{ else }}Todas{{ end }}</button>
+      <button type="button" data-filter="paper">{{ if $en }}Papers{{ else }}Artigos{{ end }}</button>
+      <button type="button" data-filter="abstract">{{ if $en }}Short papers & abstracts{{ else }}Resumos e trabalhos curtos{{ end }}</button>
+      <button type="button" data-filter="software">{{ if $en }}Software & datasets{{ else }}Software e dados{{ end }}</button>
+      <button type="button" data-filter="thesis">{{ if $en }}Theses{{ else }}Teses e dissertações{{ end }}</button>
+    </div>
+    <input type="search" class="publication-search" placeholder="{{ if $en }}Search title, author, venue, year…{{ else }}Buscar título, autor, veículo, ano…{{ end }}" aria-label="{{ if $en }}Search publications{{ else }}Buscar publicações{{ end }}">
+    <p class="publication-filter-status" aria-live="polite"></p>
+
+    <nav class="year-nav" aria-label="{{ if $en }}Publication years{{ else }}Anos de publicação{{ end }}">
+      {{ range $years }}<a href="#year-{{ .year }}">{{ .year }}</a>{{ end }}
+    </nav>
+
+    {{ range $years }}
+      <section class="publication-year" id="year-{{ .year }}">
+        <h2>{{ .year }}</h2>
+        <ol class="publication-list">
+          {{ range .items }}
+            {{/* rótulo do tipo, em dois idiomas */}}
+            {{ $label := "" }}
+            {{ if eq .category "abstract" }}{{ $label = cond $en "Abstract" "Resumo" }}
+            {{ else if eq .category "software" }}{{ $label = cond $en "Software / dataset" "Software / dados" }}
+            {{ else if eq .type "article" }}{{ $label = cond $en "Journal" "Periódico" }}
+            {{ else if eq .type "inproceedings" }}{{ $label = cond $en "Conference" "Conferência" }}
+            {{ else if eq .type "phdthesis" }}{{ $label = cond $en "PhD thesis" "Tese de doutorado" }}
+            {{ else if eq .type "mastersthesis" }}{{ $label = cond $en "MSc thesis" "Dissertação de mestrado" }}
+            {{ if .kind }}{{ $label = .kind }}{{ end }}
+            {{ end }}
+            <li class="publication-item" data-category="{{ .category }}" id="{{ .key }}" data-search="{{ printf "%s %s %s %v" .title (delimit .authors " ") .venue .year | lower }}">
+              <div class="publication-title">{{ .title }}{{ with .award }} <span class="badge-award" title="{{ . }}">★ {{ . }}</span>{{ end }}{{ if eq .role "co" }} <span class="badge-co">{{ if $en }}co-advised{{ else }}coorientação{{ end }}</span>{{ end }}</div>
+              <div class="publication-meta">
+                {{ with .authors }}<span>{{ delimit . "; " }}</span>{{ end }}
+                {{ with $label }}<span>{{ . }}</span>{{ end }}
+                {{ with .venue }}<span>{{ . }}</span>{{ end }}
+              </div>
+              <div class="publication-links">
+                {{ range .links }}
+                  <a class="{{ .kind }}-link" href="{{ if hasPrefix .url "/" }}{{ .url | relURL }}{{ else }}{{ .url }}{{ end }}" target="_blank" rel="noopener">{{ .label }}</a>
+                {{ end }}
+                <button type="button" class="bibtex-btn" data-bibtex="{{ .bibtex }}">BibTeX</button>
+              </div>
+            </li>
+          {{ end }}
+        </ol>
+      </section>
+    {{ end }}
+  {{ else }}
+    <p>{{ if $en }}Publication data not found (run scripts/bib2json.py).{{ else }}Dados de publicações não encontrados (rode scripts/bib2json.py).{{ end }}</p>
+  {{ end }}
+
+  <p class="publication-external-links">
+    {{ if $en }}Full lists:{{ else }}Listas completas:{{ end }}
+    <a href="{{ site.Params.dblp }}">DBLP</a> · <a href="{{ site.Params.lattes }}">Lattes</a>
+  </p>
+</article>
+
+{{ $js := resources.Get "js/publicacoes.js" | minify }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}

@@ -1,0 +1,93 @@
+# Em produção o GitHub Actions sobrescreve este valor (veja .github/workflows/deploy.yml).
+baseURL: "https://SEU-USUARIO.github.io/"
+title: "Marco Antonio Zanata Alves"
+languageCode: "pt-br"
+defaultContentLanguage: "pt"
+defaultContentLanguageInSubdir: false
+
+languages:
+  pt:
+    languageName: "Português"
+    languageCode: "pt-br"
+    weight: 1
+    title: "Marco Antonio Zanata Alves"
+    menu:
+      main:
+        - name: "Início"
+          pageRef: "/"
+          weight: 1
+        - name: "Pesquisa"
+          pageRef: "/research"
+          weight: 2
+        - name: "Projetos"
+          pageRef: "/projects"
+          weight: 3
+        - name: "Publicações"
+          pageRef: "/publications"
+          weight: 4
+        - name: "Ensino"
+          pageRef: "/teaching"
+          weight: 5
+        - name: "Pessoas"
+          pageRef: "/people"
+          weight: 6
+        - name: "Novos pesquisadores"
+          pageRef: "/students"
+          weight: 7
+        - name: "Vídeos"
+          pageRef: "/videos"
+          weight: 8
+  en:
+    languageName: "English"
+    languageCode: "en-us"
+    weight: 2
+    title: "Marco Antonio Zanata Alves"
+    menu:
+      main:
+        - name: "Home"
+          pageRef: "/"
+          weight: 1
+        - name: "Research"
+          pageRef: "/research"
+          weight: 2
+        - name: "Projects"
+          pageRef: "/projects"
+          weight: 3
+        - name: "Publications"
+          pageRef: "/publications"
+          weight: 4
+        - name: "Teaching"
+          pageRef: "/teaching"
+          weight: 5
+        - name: "People"
+          pageRef: "/people"
+          weight: 6
+        - name: "New researchers"
+          pageRef: "/students"
+          weight: 7
+        - name: "Videos"
+          pageRef: "/videos"
+          weight: 8
+
+enableRobotsTXT: true
+
+params:
+  description: "Professor e pesquisador no Departamento de Informática da Universidade Federal do Paraná."
+  institution: "Universidade Federal do Paraná (UFPR)"
+  department: "Departamento de Informática"
+  author: "Marco Antonio Zanata Alves"
+  orcid: "0000-0003-2440-2664"
+  lattes: "http://lattes.cnpq.br/7011183305034415"
+  dblp: "https://dblp.org/pid/47/7939"
+  scholar: "https://scholar.google.com/citations?user=zhYsRbcAAAAJ"
+  researchgate: "https://www.researchgate.net/profile/Marco-Alves-5"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+outputs:
+  home: [HTML, RSS]

@@ -1,0 +1,459 @@
+{
+ "disciplinas": [
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1212",
+   "nome": "Arquitetura de Computadores",
+   "periodos": [
+    "2026/2",
+    "2026/1",
+    "2025/1",
+    "2024/2",
+    "2024/1",
+    "2023/1",
+    "2021/1",
+    "2020/1",
+    "2019/1",
+    "2018/2",
+    "2018/1",
+    "2017/2"
+   ],
+   "ementa": "",
+   "ultimo": "2026/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1086",
+   "nome": "Arquiteturas de Alto Desempenho",
+   "periodos": [
+    "2023/2",
+    "2022/2",
+    "2022/1",
+    "2019/2",
+    "2018/2",
+    "2017/2",
+    "2016/2"
+   ],
+   "ementa": "",
+   "ultimo": "2023/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1068",
+   "nome": "Circuitos Digitais",
+   "periodos": [
+    "2025/2",
+    "2024/2",
+    "2024/1",
+    "2021/1",
+    "2017/1",
+    "2016/1"
+   ],
+   "ementa": "",
+   "ultimo": "2025/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1100",
+   "nome": "Estágio Obrigatório",
+   "periodos": [
+    "2026/2",
+    "2026/1",
+    "2025/2",
+    "2025/1",
+    "2024/2",
+    "2024/1",
+    "2023/2",
+    "2023/1",
+    "2022/2",
+    "2022/1",
+    "2021/2",
+    "2021/1",
+    "2020/2",
+    "2020/1"
+   ],
+   "ementa": "",
+   "ultimo": "2026/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1316",
+   "nome": "Programação Paralela",
+   "periodos": [
+    "2026/2",
+    "2025/2",
+    "2025/1",
+    "2023/2",
+    "2022/1",
+    "2021/2",
+    "2021/1",
+    "2020/2",
+    "2020/1",
+    "2019/1",
+    "2018/1",
+    "2016/1"
+   ],
+   "ementa": "",
+   "ultimo": "2026/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1022",
+   "nome": "Projeto de Sistemas Digitais",
+   "periodos": [
+    "2026/1",
+    "2024/2"
+   ],
+   "ementa": "",
+   "ultimo": "2026/1"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1210",
+   "nome": "Projetos Digitais e Microprocessadores",
+   "periodos": [
+    "2022/2",
+    "2021/2",
+    "2016/2"
+   ],
+   "ementa": "",
+   "ultimo": "2022/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1123",
+   "nome": "Trabalho de Conclusão de Curso 1 em Ciência da Computação",
+   "periodos": [
+    "2026/2",
+    "2026/1",
+    "2025/2",
+    "2025/1",
+    "2024/2",
+    "2024/1",
+    "2023/2",
+    "2023/1"
+   ],
+   "ementa": "",
+   "ultimo": "2026/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1082",
+   "nome": "Trabalho de Conclusão de Curso 1 em Organização e Arquitetura de Computadores",
+   "periodos": [
+    "2022/2",
+    "2022/1",
+    "2021/2",
+    "2021/1",
+    "2020/2",
+    "2020/1"
+   ],
+   "ementa": "",
+   "ultimo": "2022/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1124",
+   "nome": "Trabalho de Conclusão de Curso 2 em Ciência da Computação",
+   "periodos": [
+    "2026/2",
+    "2026/1",
+    "2025/2",
+    "2025/1",
+    "2024/2",
+    "2024/1",
+    "2023/2"
+   ],
+   "ementa": "",
+   "ultimo": "2026/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "BCC",
+   "codigo": "CI1083",
+   "nome": "Trabalho de Conclusão de Curso 2 em Organização e Arquitetura de Computadores",
+   "periodos": [
+    "2024/1",
+    "2023/2",
+    "2023/1",
+    "2022/2",
+    "2022/1",
+    "2021/2",
+    "2021/1",
+    "2020/2",
+    "2020/1"
+   ],
+   "ementa": "",
+   "ultimo": "2024/1"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1212",
+   "nome": "Arquitetura de Computadores",
+   "periodos": [
+    "2026/2",
+    "2026/1",
+    "2025/1",
+    "2024/2",
+    "2024/1"
+   ],
+   "ementa": "",
+   "ultimo": "2026/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1086",
+   "nome": "Arquiteturas de Alto Desempenho",
+   "periodos": [
+    "2023/2",
+    "2019/2"
+   ],
+   "ementa": "",
+   "ultimo": "2023/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1068",
+   "nome": "Circuitos Digitais",
+   "periodos": [
+    "2025/2",
+    "2024/2",
+    "2024/1",
+    "2023/1"
+   ],
+   "ementa": "",
+   "ultimo": "2025/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1101",
+   "nome": "Estágio Supervisionado em Informática Biomédica",
+   "periodos": [
+    "2024/2",
+    "2023/2",
+    "2023/1"
+   ],
+   "ementa": "",
+   "ultimo": "2024/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1243",
+   "nome": "Fundamentos de Projeto e Arquitetura de Computadores",
+   "periodos": [
+    "2020/2",
+    "2019/2"
+   ],
+   "ementa": "",
+   "ultimo": "2020/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1316",
+   "nome": "Programação Paralela",
+   "periodos": [
+    "2026/2",
+    "2025/2",
+    "2025/1",
+    "2023/2",
+    "2021/1",
+    "2020/2",
+    "2020/1",
+    "2019/1",
+    "2018/1",
+    "2017/1",
+    "2016/1"
+   ],
+   "ementa": "",
+   "ultimo": "2026/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1022",
+   "nome": "Projeto de Sistemas Digitais",
+   "periodos": [
+    "2026/1",
+    "2024/2"
+   ],
+   "ementa": "",
+   "ultimo": "2026/1"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1133",
+   "nome": "Trabalho de Conclusão de Curso 1 em Informática Biomédica",
+   "periodos": [
+    "2026/1",
+    "2025/1",
+    "2023/1"
+   ],
+   "ementa": "",
+   "ultimo": "2026/1"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1134",
+   "nome": "Trabalho de Conclusão de Curso 2 em Informática Biomédica",
+   "periodos": [
+    "2026/2",
+    "2026/1",
+    "2025/2"
+   ],
+   "ementa": "",
+   "ultimo": "2026/2"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI1132",
+   "nome": "Trabalho de Conclusão de Curso 2 em Informática Biomédica - Extensionista",
+   "periodos": [
+    "2026/1"
+   ],
+   "ementa": "",
+   "ultimo": "2026/1"
+  },
+  {
+   "nivel": "graduacao",
+   "curso": "IBM",
+   "codigo": "CI262",
+   "nome": "Trabalho de Conclusão de Curso em Informática",
+   "periodos": [
+    "2023/2",
+    "2023/1",
+    "2022/2",
+    "2022/1",
+    "2021/2",
+    "2021/1",
+    "2020/2",
+    "2020/1"
+   ],
+   "ementa": "",
+   "ultimo": "2023/2"
+  },
+  {
+   "nivel": "pos",
+   "curso": "PPGINF",
+   "codigo": "INFO7005",
+   "nome": "Arquitetura de Computadores",
+   "periodos": [
+    "2023/2",
+    "2022/2",
+    "2022/1",
+    "2019/2",
+    "2017/2",
+    "2016/2"
+   ],
+   "ementa": "Revisão MIPS: Pipeline",
+   "ultimo": "2023/2"
+  },
+  {
+   "nivel": "pos",
+   "curso": "PPGINF",
+   "codigo": "INFO7022",
+   "nome": "Oficina de Arquiteturas Paralelas",
+   "periodos": [
+    "2021/2",
+    "2021/1",
+    "2019/2",
+    "2019/1",
+    "2017/2",
+    "2017/1"
+   ],
+   "ementa": "Curso prático de conteúdo variável, destinado a desenvolver e aprimorar técnicas de programação e desenvolvimento de sistemas, no contexto de problemas de Arquitetura de Computadores.",
+   "ultimo": "2021/2"
+  },
+  {
+   "nivel": "pos",
+   "curso": "PPGINF",
+   "codigo": "INFO7028",
+   "nome": "Oficina de Processamento de Imagens",
+   "periodos": [
+    "2022/1"
+   ],
+   "ementa": "Curso prático de conteúdo variável, destinado a desenvolver e aprimorar técnicas de programação e desenvolvimento de sistemas, no contexto de problemas de Processamento de Imagens.",
+   "ultimo": "2022/1"
+  },
+  {
+   "nivel": "pos",
+   "curso": "PPGINF",
+   "codigo": "INFO7030",
+   "nome": "Oficina de Sistemas Distribuídos",
+   "periodos": [
+    "2025/2",
+    "2025/1",
+    "2017/2",
+    "2017/1"
+   ],
+   "ementa": "Curso prático de conteúdo variável, destinado a desenvolver e aprimorar técnicas de programação e desenvolvimento de sistemas, no contexto de problemas de Sistemas Distribuídos.",
+   "ultimo": "2025/2"
+  },
+  {
+   "nivel": "pos",
+   "curso": "PPGINF",
+   "codigo": "INFO7032",
+   "nome": "Prática em Docência de Informática I",
+   "periodos": [
+    "2025/2",
+    "2021/1",
+    "2020/1",
+    "2017/2",
+    "2017/1"
+   ],
+   "ementa": "Acompanhamento do orientador em parte da rotina didática das disciplinas de Graduação.",
+   "ultimo": "2025/2"
+  },
+  {
+   "nivel": "pos",
+   "curso": "PPGINF",
+   "codigo": "INFO7033",
+   "nome": "Prática em Docência de Informática II",
+   "periodos": [
+    "2025/2",
+    "2019/1",
+    "2017/2",
+    "2017/1"
+   ],
+   "ementa": "Acompanhamento do orientador em parte da rotina didática das disciplinas de Graduação.",
+   "ultimo": "2025/2"
+  },
+  {
+   "nivel": "pos",
+   "curso": "PPGINF",
+   "codigo": "INFO7044",
+   "nome": "Sistemas de Processamento Paralelo",
+   "periodos": [
+    "2025/2",
+    "2025/1",
+    "2023/2",
+    "2022/1",
+    "2021/2",
+    "2021/1",
+    "2020/1",
+    "2017/1",
+    "2016/1"
+   ],
+   "ementa": "Introdução ao paralelismo. Análise de algoritmos paralelos. Avaliação de desempenho. Programação multi-",
+   "ultimo": "2025/2"
+  }
+ ]
+}
