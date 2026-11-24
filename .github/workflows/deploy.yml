@@ -24,8 +24,8 @@ jobs:
       - name: Validar e regenerar publicações
         run: |
           python3 scripts/bib2json.py
-          git diff --exit-code data/publicacoes.json || {
-            echo "::error::data/publicacoes.json está desatualizado. Rode 'python3 scripts/bib2json.py' e faça commit."
+          git diff --exit-code data/publicacoes.json data/nuvem.json || {
+            echo "::error::data/publicacoes.json ou data/nuvem.json está desatualizado. Rode 'python3 scripts/bib2json.py' e faça commit."
             exit 1
           }
 

@@ -3,7 +3,7 @@ title: "People"
 description: "Current students and alumni."
 ---
 
-Current advisees (source: Lattes) and alumni (generated from the theses and dissertations in `bib/publicacoes.bib`). Want to join the group? See [New researchers]({{< relref "students" >}}).
+Current advisees (source: Lattes) and alumni. Want to join the group? See [New researchers]({{< relref "students" >}}).
 
 ## PhD students
 

@@ -1,7 +1,9 @@
 {{- $id := .Get "id" -}}
 {{- $playlist := .Get "playlist" -}}
 {{- $src := printf "https://www.youtube-nocookie.com/embed/%s" $id -}}
-{{- if $playlist -}}
+{{- if and $playlist (not $id) -}}
+  {{- $src = printf "https://www.youtube-nocookie.com/embed/videoseries?list=%s" $playlist -}}
+{{- else if $playlist -}}
   {{- $src = printf "%s?list=%s" $src $playlist -}}
 {{- end -}}
 <div class="youtube-embed">

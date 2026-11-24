@@ -18,7 +18,9 @@ sitepessoal/
 │
 ├── data/                        Dados lidos pelos templates (site.Data.*)
 │   ├── publicacoes.json         GERADO por bib2json.py — não edite.
+│   ├── nuvem.json               GERADO por bib2json.py — termos da nuvem de palavras (página Pesquisa).
 │   ├── ensino.json              GERADO por siga_para_json.py — disciplinas por curso (sem dados de alunos).
+│   ├── videos.json              Vídeos avulsos e playlists (os do .bib entram sozinhos).
 │   ├── projetos.json            Projetos de pesquisa (edite à mão; origem: Lattes e proposta PQ).
 │   ├── pessoas.json             Orientandos atuais (edite à mão; origem: Lattes).
 │   └── noticias.json            Notícias da página inicial (edite à mão).
@@ -33,24 +35,26 @@ sitepessoal/
 │   ├── people.*.md              Orientandos atuais + egressos (gerados do .bib e de pessoas.json).
 │   ├── students.*.md            Convite a novos alunos.
 │   ├── undergraduate-research.*.md  Iniciação científica.
-│   └── videos.*.md              Vídeos.
+│   └── videos.*.md              Vídeos (página montada por layouts/_default/videos.html).
 │
 ├── layouts/                     Templates Hugo
 │   ├── _default/baseof.html     Esqueleto (cabeçalho, menu, rodapé, idioma).
 │   ├── _default/{list,single}.html  Páginas genéricas.
+│   ├── _default/videos.html     Aba Vídeos: seções, busca e miniaturas que carregam o player ao clicar.
 │   ├── index.html               Home: retrato, notícias e publicações recentes.
 │   ├── publications/list.html   Lista de publicações: filtros, busca, selo de prêmio, botão BibTeX.
 │   └── shortcodes/
 │       ├── ensino.html          {{< ensino nivel="graduacao" curso="BCC" >}} → tabela de data/ensino.json
 │       ├── pessoas.html         {{< pessoas grupo="doutorado" >}} → lista de data/pessoas.json
 │       ├── egressos.html        {{< egressos >}} → teses/dissertações orientadas (do .bib), com filtro de nível e ano
+│       ├── nuvem.html           {{< nuvem >}} → nuvem de palavras dos títulos (clique filtra Publicações)
 │       ├── projetos.html        {{< projetos >}} → lista de data/projetos.json
 │       ├── email.html           {{< email >}} → e-mail montado por JavaScript (anti-spam)
 │       └── youtube.html         {{< youtube id="…" >}}
 │
 ├── assets/
 │   ├── css/main.css             Estilos (processados e minificados pelo Hugo).
-│   └── js/publicacoes.js        Filtro, busca e cópia de BibTeX.
+│   └── js/publicacoes.js, videos.js   Filtro/busca/BibTeX; vídeos.
 │
 ├── static/                      Copiado como está para o site
 │   ├── pdf/                     PDFs nomeados pela chave: <chave>.pdf, _slides, _preprint, _poster, _en, _pt…
@@ -60,6 +64,7 @@ sitepessoal/
     ├── bib2json.py              .bib → data/publicacoes.json, com validação (--check só valida).
     ├── importar_pdfs.py         Pasta de PDFs soltos → renomeia/anexa, extrai título e gera rascunhos .bib.
     ├── baixar_acervo.py         Baixa teses do Acervo Digital da UFPR para as entradas sem PDF.
+    ├── youtube_para_json.py     Canal/playlist do YouTube → data/videos.json (títulos e vídeos novos).
     ├── siga_para_json.py        Listagens do SIGA (HTML) → data/ensino.json.
     └── limpar_originais.py      Remove da sua pasta de PDFs originais os que já estão idênticos no site.
 ```
@@ -140,6 +145,26 @@ sem acesso ao Acervo; teste com `--dry-run` primeiro. Confirme também a políti
 `category` (paper · abstract · software · thesis) · `award = {Best Paper}` (selo ★) · `role = {co}` (coorientação) ·
 `pdfurl` (PDF externo) · `video` · `dblp`. O botão **BibTeX** de cada item copia o registro sem esses campos.
 
+## Nuvem de palavras
+
+A nuvem na página Pesquisa é gerada pelo `bib2json.py` a partir dos títulos do `.bib` (`data/nuvem.json`): português e
+inglês são unificados (memory/memória, performance/desempenho…) e siglas são preservadas. Para ajustar, edite
+`CLOUD_CANON` (sinônimos) e `CLOUD_STOP` (palavras ignoradas) em `scripts/bib2json.py` e rode o script de novo.
+
+## Vídeos
+
+A aba Vídeos lê `data/videos.json` (cursos, divulgação, canal) e o campo `video = {https://youtu.be/...}` de cada
+publicação (vão para Defesas se `category = {thesis}`, senão Apresentações). Para trazer títulos reais e vídeos
+novos do canal, rode no seu computador:
+
+```bash
+python3 scripts/youtube_para_json.py --titulos          # preenche títulos dos marcados "titulo_auto"
+python3 scripts/youtube_para_json.py --novos --dry-run  # vê o que há de novo no canal @HiPESLab
+python3 scripts/youtube_para_json.py --novos            # grava em data/videos.json (seção "novos")
+```
+
+Depois mova os vídeos de `"novos"` para a seção certa em `data/videos.json`.
+
 ## Ensino a partir do SIGA
 
 ```bash
@@ -152,7 +177,7 @@ SIGA (o `.gitignore` já bloqueia `SIGA*.html`). Códigos antigos → atuais (CI
 
 ## Publicar no GitHub Pages
 
-1. Crie o repositório (`SEU-USUARIO.github.io` publica na raiz do domínio — recomendado, pois as páginas usam caminhos como `/img/...`).
+1. Crie o repositório (`mazalves.github.io` publica na raiz do domínio — recomendado, pois as páginas usam caminhos como `/img/...`).
 2. Em **Settings → Pages → Source**, escolha **GitHub Actions**.
 3. `git push` na branch `main`. O workflow `.github/workflows/deploy.yml` valida o `.bib`, confere que o JSON está em dia, roda o Hugo e publica.
 

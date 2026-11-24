@@ -1,5 +1,5 @@
 # Em produção o GitHub Actions sobrescreve este valor (veja .github/workflows/deploy.yml).
-baseURL: "https://SEU-USUARIO.github.io/"
+baseURL: "https://mazalves.github.io/"
 title: "Marco Antonio Zanata Alves"
 languageCode: "pt-br"
 defaultContentLanguage: "pt"

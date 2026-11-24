@@ -6,6 +6,10 @@ description: "Research in computer architecture, high-performance computing and 
 
 My research investigates how to design more efficient computing architectures and systems, combining computer architecture, high-performance computing and memory systems. I explore ways to bring computation closer to data, improve the performance and efficiency of parallel systems, and develop tools to understand and evaluate emerging architectures.
 
+## In words
+
+{{< nuvem >}}
+
 ## Research areas
 
 <div class="research-grid">

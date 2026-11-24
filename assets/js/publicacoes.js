@@ -16,7 +16,7 @@
       section.querySelectorAll('.publication-item').forEach((item) => {
         const text = item.dataset.search || '';
         const show = (filter === 'all' || item.dataset.category === filter) &&
-                     terms.every((t) => text.includes(t));
+                     terms.every((t) => t.split('|').some((alt) => text.includes(alt)));
         item.hidden = !show;
         if (show) n++;
       });
@@ -44,5 +44,7 @@
       window.prompt('BibTeX', btn.dataset.bibtex);
     }
   });
+  const q = new URLSearchParams(location.search).get('q');   // vindo da nuvem de palavras
+  if (q && search) search.value = q;
   update();
 })();

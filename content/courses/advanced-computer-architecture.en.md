@@ -23,3 +23,9 @@ draft: false
 - MMU: paging and caches
 - Memory controllers and DDR memories
 - Hybrid Memory Cube (HMC) and High Bandwidth Memory (HBM)
+
+## Video lectures
+
+{{< youtube playlist="PL_9px37PNj6oKFBXIBkVJEWcc0178yN3K" >}}
+
+See also the [Videos]({{< relref "videos" >}}) tab.

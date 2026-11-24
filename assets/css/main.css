@@ -171,3 +171,24 @@ a:focus-visible {
 .egressos-filtros button { font: inherit; font-size: .9rem; padding: .25rem .8rem; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: inherit; cursor: pointer; }
 .egressos-filtros button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
 .egressos-filtros select { font: inherit; padding: .25rem .5rem; border: 1px solid var(--line); border-radius: .4rem; background: transparent; color: inherit; }
+/* vídeos */
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; margin: 1rem 0 2rem; }
+.video-card { margin: 0; }
+.video-card[hidden], .video-section[hidden] { display: none; }
+.video-thumb { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; padding: 0; border: 0; border-radius: 8px; overflow: hidden; background: #000; cursor: pointer; }
+.video-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity .15s; }
+.video-thumb:hover img { opacity: .8; }
+.video-play { position: absolute; inset: 0; display: grid; place-items: center; font-size: 2.2rem; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+.video-card iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 8px; display: block; }
+.video-card figcaption { display: flex; flex-direction: column; gap: .1rem; margin-top: .45rem; font-size: .92rem; line-height: 1.35; }
+.video-card figcaption small { color: var(--muted); }
+.video-ph { position: absolute; inset: 0; display: grid; place-items: center; padding: 1rem; text-align: center; color: #fff; font-weight: 600; background: linear-gradient(135deg, #174d78, #0b2a44); }
+.video-ph + .video-play { align-content: end; padding-bottom: .5rem; }
+/* nuvem de palavras */
+.nuvem { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .15rem .9rem; margin: 1.5rem 0 .5rem; padding: 1.5rem 1rem; line-height: 1.15; border: 1px solid var(--line); border-radius: 12px; background: var(--soft); }
+.nuvem-w { text-decoration: none; font-weight: 600; transition: transform .15s, opacity .15s; }
+.nuvem-w:hover { transform: scale(1.08); text-decoration: none; }
+.nuvem-w.t1 { color: var(--accent); font-weight: 750; }
+.nuvem-w.t2 { color: #2f6f9f; }
+.nuvem-w.t3 { color: #5f7a90; font-weight: 500; }
+.nuvem-nota { color: var(--muted); font-size: .85rem; text-align: center; }

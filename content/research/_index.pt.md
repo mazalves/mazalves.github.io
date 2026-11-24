@@ -6,6 +6,10 @@ description: "Pesquisa em arquitetura de computadores, computação de alto dese
 
 Minha pesquisa explora como projetar arquiteturas e sistemas computacionais mais eficientes, combinando arquitetura de computadores, computação de alto desempenho e sistemas de memória. Investigo formas de aproximar processamento e dados, melhorar o desempenho e a eficiência de sistemas paralelos e desenvolver ferramentas para compreender e avaliar arquiteturas emergentes.
 
+## Em palavras
+
+{{< nuvem >}}
+
 ## Linhas de pesquisa
 
 <div class="research-grid">

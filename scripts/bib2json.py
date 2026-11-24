@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BIB = ROOT / "bib" / "publicacoes.bib"
 PDF_DIR = ROOT / "static" / "pdf"
 OUT = ROOT / "data" / "publicacoes.json"
+CLOUD_OUT = ROOT / "data" / "nuvem.json"
 
 CATEGORIES = {"paper", "abstract", "thesis", "software"}
 KEY_RE = re.compile(r"^(\d{4})-([A-Za-z0-9]+(?:-[A-Za-z0-9]+)*)-([A-Z][A-Za-z]+?)([a-z]?)$")
@@ -271,6 +272,100 @@ def validate(entries, items):
     return errors, warnings
 
 
+# ---------------------------------------------------------------- nuvem de palavras
+# Termos canônicos bilíngues: variante (minúscula, sem plural) -> (rótulo EN, rótulo PT).
+CLOUD_CANON = {
+    "memory": ("memory", "memória"), "memories": ("memory", "memória"), "memória": ("memory", "memória"),
+    "memórias": ("memory", "memória"),
+    "processing": ("processing", "processamento"), "processamento": ("processing", "processamento"),
+    "processor": ("processors", "processadores"), "processadore": ("processors", "processadores"),
+    "processadores": ("processors", "processadores"),
+    "performance": ("performance", "desempenho"), "desempenho": ("performance", "desempenho"),
+    "architecture": ("architecture", "arquitetura"), "arquitetura": ("architecture", "arquitetura"),
+    "arquiteturas": ("architecture", "arquitetura"),
+    "data": ("data", "dados"), "dados": ("data", "dados"),
+    "machine": ("machine learning", "aprendizado de máquina"), "learning": ("machine learning", "aprendizado de máquina"),
+    "aprendizagem": ("machine learning", "aprendizado de máquina"),
+    "máquina": ("machine learning", "aprendizado de máquina"), "aprendizado": ("machine learning", "aprendizado de máquina"),
+    "avaliação": ("evaluation", "avaliação"), "evaluating": ("evaluation", "avaliação"),
+    "evaluation": ("evaluation", "avaliação"),
+    "simulação": ("simulation", "simulação"), "simulation": ("simulation", "simulação"),
+    "simulator": ("simulation", "simulação"), "simulador": ("simulation", "simulação"),
+    "instrução": ("instructions", "instruções"), "instruções": ("instructions", "instruções"),
+    "instruction": ("instructions", "instruções"),
+    "energy": ("energy", "energia"), "energia": ("energy", "energia"),
+    "efficient": ("efficiency", "eficiência"), "efficiency": ("efficiency", "eficiência"),
+    "eficiente": ("efficiency", "eficiência"), "eficiência": ("efficiency", "eficiência"),
+    "parallel": ("parallel", "paralelo"), "paralelo": ("parallel", "paralelo"), "paralela": ("parallel", "paralelo"),
+    "thread": ("threads", "threads"), "threads": ("threads", "threads"),
+    "application": ("applications", "aplicações"), "aplicações": ("applications", "aplicações"),
+    "technique": ("techniques", "técnicas"), "técnicas": ("techniques", "técnicas"),
+    "database": ("databases", "bancos de dados"), "databas": ("databases", "bancos de dados"),
+    "precipitação": ("precipitation", "precipitação"), "precipitation": ("precipitation", "precipitação"),
+    "nuvem": ("cloud", "nuvem"), "cloud": ("cloud", "nuvem"),
+    "mapping": ("mapping", "mapeamento"), "mapeamento": ("mapping", "mapeamento"),
+    "multicore": ("multi-core", "multi-core"), "multi-core": ("multi-core", "multi-core"),
+    "multi-cores": ("multi-core", "multi-core"),
+    "processing-in-memory": ("PIM", "PIM"), "pim": ("PIM", "PIM"),
+    "system": ("systems", "sistemas"), "sistema": ("systems", "sistemas"), "sistemas": ("systems", "sistemas"),
+    "analysis": ("analysis", "análise"), "análise": ("analysis", "análise"),
+    "optimize": ("optimization", "otimização"), "optimization": ("optimization", "otimização"),
+    "otimização": ("optimization", "otimização"),
+    "real-time": ("real-time", "tempo real"), "vector": ("vector", "vetorial"), "vetorial": ("vector", "vetorial"),
+    "mechanism": ("mechanisms", "mecanismos"), "mecanismo": ("mechanisms", "mecanismos"),
+    "access": ("memory access", "acesso à memória"), "acesso": ("memory access", "acesso à memória"),
+    "caches": ("cache", "cache"), "cache": ("cache", "cache"),
+}
+CLOUD_STOP = set("""a an the of for and in on to with by via from under through at as or its into over using use used
+based approach toward towards new case study line table fast shared extensions annotated deolhonoscorais design de da do das dos e em para com por uma um uns umas no na nos nas ao aos
+através utilizando proposta sobre entre sua seu como que se ou v version versão 1 2 3 vs""".split())
+TOKEN_RE = re.compile(r"[A-Za-zÀ-ÿ0-9]+(?:-[A-Za-zÀ-ÿ0-9]+)*")
+
+
+def build_cloud(items, minimo=3, maximo=50):
+    """Conta termos dos títulos (1 voto por título) e devolve a lista já arranjada do centro p/ fora."""
+    from collections import Counter
+    votos, variantes, acronimos = Counter(), {}, set()
+    for it in items:
+        vistos = set()
+        for tok in TOKEN_RE.findall(it["title"]):
+            low = tok.lower()
+            if low in CLOUD_STOP or low.isdigit() or len(low) < 2:
+                continue
+            if len(tok) >= 2 and tok.isupper() and tok.isalpha():
+                acronimos.add(low)
+            canon = CLOUD_CANON.get(low) or CLOUD_CANON.get(low.rstrip("s"))
+            if canon is None:
+                chave = low[:-1] if low.endswith("s") and len(low) > 4 and not low.endswith("ss") else low
+                canon = (tok if low in acronimos else low, tok if low in acronimos else low)
+                chave_c = chave
+            else:
+                chave_c = canon[0]
+            if chave_c in vistos:
+                continue
+            vistos.add(chave_c)
+            votos[chave_c] += 1
+            variantes.setdefault(chave_c, canon)
+            variantes.setdefault(("q", chave_c), Counter())[low] += 1
+    termos = []
+    for k, n in votos.items():
+        if n < minimo:
+            continue
+        en, pt = variantes[k]
+        if k in acronimos or en.isupper():
+            en = pt = en.upper()
+        q = "|".join(w for w, _ in variantes[("q", k)].most_common(4))   # variantes (OR) p/ a busca
+        termos.append({"en": en, "pt": pt, "n": n, "q": q})
+    termos.sort(key=lambda t: (-t["n"], t["en"]))
+    termos = termos[:maximo]
+    # arranjo centro->fora: maiores no meio, alternando esquerda/direita
+    esq, dir_ = [], []
+    for i, t in enumerate(termos):
+        (esq if i % 2 else dir_).append(t)
+    return list(reversed(esq)) + dir_
+
+
+
 def main():
     check_only = "--check" in sys.argv
     entries = parse_bib(BIB.read_text(encoding="utf-8"))
@@ -299,6 +394,9 @@ def main():
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print("gerado:", OUT.relative_to(ROOT))
+    nuvem = build_cloud(items)
+    CLOUD_OUT.write_text(json.dumps({"termos": nuvem}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"gerado: {CLOUD_OUT.relative_to(ROOT)} ({len(nuvem)} termos)")
 
 
 if __name__ == "__main__":
