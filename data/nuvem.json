@@ -1,0 +1,304 @@
+{
+ "termos": [
+  {
+   "en": "detection",
+   "pt": "detection",
+   "n": 3,
+   "q": "detection"
+  },
+  {
+   "en": "computer",
+   "pt": "computer",
+   "n": 3,
+   "q": "computer"
+  },
+  {
+   "en": "array",
+   "pt": "array",
+   "n": 3,
+   "q": "array"
+  },
+  {
+   "en": "accelerators",
+   "pt": "accelerators",
+   "n": 3,
+   "q": "accelerators"
+  },
+  {
+   "en": "HMC",
+   "pt": "HMC",
+   "n": 3,
+   "q": "hmc"
+  },
+  {
+   "en": "predictors",
+   "pt": "predictors",
+   "n": 4,
+   "q": "predictors"
+  },
+  {
+   "en": "execution",
+   "pt": "execution",
+   "n": 4,
+   "q": "execution"
+  },
+  {
+   "en": "coral",
+   "pt": "coral",
+   "n": 4,
+   "q": "coral"
+  },
+  {
+   "en": "SIMD",
+   "pt": "SIMD",
+   "n": 4,
+   "q": "simd"
+  },
+  {
+   "en": "precipitation",
+   "pt": "precipitação",
+   "n": 5,
+   "q": "precipitação|precipitation"
+  },
+  {
+   "en": "hardware",
+   "pt": "hardware",
+   "n": 5,
+   "q": "hardware"
+  },
+  {
+   "en": "cloud",
+   "pt": "nuvem",
+   "n": 5,
+   "q": "cloud|nuvem"
+  },
+  {
+   "en": "optimization",
+   "pt": "otimização",
+   "n": 7,
+   "q": "optimize|otimização"
+  },
+  {
+   "en": "vector",
+   "pt": "vetorial",
+   "n": 8,
+   "q": "vector|vetorial"
+  },
+  {
+   "en": "mapping",
+   "pt": "mapeamento",
+   "n": 8,
+   "q": "mapping|mapeamento"
+  },
+  {
+   "en": "parallel",
+   "pt": "paralelo",
+   "n": 9,
+   "q": "parallel|paralelo|paralelas"
+  },
+  {
+   "en": "threads",
+   "pt": "threads",
+   "n": 10,
+   "q": "thread|threads"
+  },
+  {
+   "en": "databases",
+   "pt": "bancos de dados",
+   "n": 11,
+   "q": "database|databases"
+  },
+  {
+   "en": "near-data",
+   "pt": "near-data",
+   "n": 12,
+   "q": "near-data"
+  },
+  {
+   "en": "performance",
+   "pt": "desempenho",
+   "n": 15,
+   "q": "performance|desempenho"
+  },
+  {
+   "en": "evaluation",
+   "pt": "avaliação",
+   "n": 15,
+   "q": "avaliação|evaluating|evaluation"
+  },
+  {
+   "en": "systems",
+   "pt": "sistemas",
+   "n": 16,
+   "q": "systems|system|sistemas|sistema"
+  },
+  {
+   "en": "PIM",
+   "pt": "PIM",
+   "n": 16,
+   "q": "processing-in-memory|pim"
+  },
+  {
+   "en": "cache",
+   "pt": "cache",
+   "n": 18,
+   "q": "cache|caches"
+  },
+  {
+   "en": "architecture",
+   "pt": "arquitetura",
+   "n": 24,
+   "q": "arquiteturas|architectures|architecture|arquitetura"
+  },
+  {
+   "en": "memory",
+   "pt": "memória",
+   "n": 38,
+   "q": "memory|memória|memories|memórias"
+  },
+  {
+   "en": "processing",
+   "pt": "processamento",
+   "n": 23,
+   "q": "processing|processamento"
+  },
+  {
+   "en": "data",
+   "pt": "dados",
+   "n": 18,
+   "q": "data|dados"
+  },
+  {
+   "en": "machine learning",
+   "pt": "aprendizado de máquina",
+   "n": 16,
+   "q": "machine|aprendizado|aprendizagem|machines"
+  },
+  {
+   "en": "efficiency",
+   "pt": "eficiência",
+   "n": 15,
+   "q": "efficient|efficiency|eficiente|eficiência"
+  },
+  {
+   "en": "multi-core",
+   "pt": "multi-core",
+   "n": 15,
+   "q": "multi-core|multicore"
+  },
+  {
+   "en": "simulation",
+   "pt": "simulação",
+   "n": 14,
+   "q": "simulator|simulação|simulation|simulations"
+  },
+  {
+   "en": "processors",
+   "pt": "processadores",
+   "n": 12,
+   "q": "processadores|processors|processor"
+  },
+  {
+   "en": "applications",
+   "pt": "aplicações",
+   "n": 10,
+   "q": "applications|aplicações"
+  },
+  {
+   "en": "analysis",
+   "pt": "análise",
+   "n": 9,
+   "q": "análise|analysis"
+  },
+  {
+   "en": "instructions",
+   "pt": "instruções",
+   "n": 8,
+   "q": "instruções|instructions|instruction"
+  },
+  {
+   "en": "techniques",
+   "pt": "técnicas",
+   "n": 8,
+   "q": "técnicas|technique|techniques"
+  },
+  {
+   "en": "memory access",
+   "pt": "acesso à memória",
+   "n": 7,
+   "q": "access|acesso"
+  },
+  {
+   "en": "mechanisms",
+   "pt": "mecanismos",
+   "n": 6,
+   "q": "mechanism|mecanismo"
+  },
+  {
+   "en": "energy",
+   "pt": "energia",
+   "n": 5,
+   "q": "energy"
+  },
+  {
+   "en": "hash",
+   "pt": "hash",
+   "n": 5,
+   "q": "hash"
+  },
+  {
+   "en": "DRAM",
+   "pt": "DRAM",
+   "n": 4,
+   "q": "dram"
+  },
+  {
+   "en": "computation",
+   "pt": "computation",
+   "n": 4,
+   "q": "computation"
+  },
+  {
+   "en": "dataset",
+   "pt": "dataset",
+   "n": 4,
+   "q": "dataset"
+  },
+  {
+   "en": "monitoring",
+   "pt": "monitoring",
+   "n": 4,
+   "q": "monitoring"
+  },
+  {
+   "en": "real-time",
+   "pt": "tempo real",
+   "n": 4,
+   "q": "real-time"
+  },
+  {
+   "en": "HPC",
+   "pt": "HPC",
+   "n": 3,
+   "q": "hpc"
+  },
+  {
+   "en": "adaptable",
+   "pt": "adaptable",
+   "n": 3,
+   "q": "adaptable"
+  },
+  {
+   "en": "bypassing",
+   "pt": "bypassing",
+   "n": 3,
+   "q": "bypassing"
+  },
+  {
+   "en": "computing",
+   "pt": "computing",
+   "n": 3,
+   "q": "computing"
+  }
+ ]
+}

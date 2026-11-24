@@ -1,0 +1,18 @@
+{{- /* Nuvem de palavras dos títulos das publicações. Dados: data/nuvem.json (gerado por scripts/bib2json.py). */ -}}
+{{- $en := eq site.Language.Lang "en" -}}
+{{- $termos := site.Data.nuvem.termos -}}
+{{- if $termos -}}
+{{- $max := 1 -}}{{- $min := 9999 -}}
+{{- range $termos }}{{ if gt .n $max }}{{ $max = .n }}{{ end }}{{ if lt .n $min }}{{ $min = .n }}{{ end }}{{ end -}}
+{{- $span := sub $max $min | float -}}{{- if eq $span 0.0 }}{{ $span = 1.0 }}{{ end -}}
+{{- $pub := (site.GetPage "/publications").RelPermalink -}}
+<div class="nuvem" role="list" aria-label="{{ if $en }}Word cloud from publication titles{{ else }}Nuvem de palavras dos títulos das publicações{{ end }}">
+{{- range $i, $t := $termos }}
+  {{- $f := div (sub $t.n $min | float) $span -}}
+  {{- $size := add 0.95 (mul 2.6 (math.Pow $f 0.7)) -}}
+  {{- $tier := cond (ge $f 0.55) "t1" (cond (ge $f 0.2) "t2" "t3") -}}
+  <a role="listitem" class="nuvem-w {{ $tier }}" style="font-size:{{ printf "%.2f" $size }}rem" href="{{ $pub }}?q={{ $t.q | urlquery }}" title="{{ $t.n }} {{ if $en }}titles{{ else }}títulos{{ end }}">{{ if $en }}{{ $t.en }}{{ else }}{{ $t.pt }}{{ end }}</a>
+{{- end }}
+</div>
+<p class="nuvem-nota">{{ if $en }}Terms most frequent in my publication titles; larger = more titles. Click a word to filter the publications.{{ else }}Termos mais frequentes nos títulos das minhas publicações; maior = mais títulos. Clique numa palavra para filtrar as publicações.{{ end }}</p>
+{{- end -}}

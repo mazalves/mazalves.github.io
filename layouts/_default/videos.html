@@ -1,0 +1,67 @@
+{{/* Página de vídeos. Dados: data/videos.json (avulsos/playlists) + campo video= das publicações. */}}
+{{ define "main" }}
+{{ $en := eq .Language.Lang "en" }}
+{{ $cfg := site.Data.videos }}
+
+{{/* 1) monta a lista de cartões */}}
+{{ $cards := slice }}
+{{ range $cfg.videos }}
+  {{ $cards = $cards | append (dict "id" .id "playlist" (.playlist | default "") "secao" .secao
+      "titulo" (cond $en (.titulo_en | default .titulo) .titulo)
+      "desc" (cond $en (.descricao_en | default (.descricao | default "")) (.descricao | default ""))
+      "ano" (.ano | default 0) "autores" "" "chave" "") }}
+{{ end }}
+{{ range site.Data.publicacoes.years }}{{ range .items }}{{ $it := . }}{{ range .links }}{{ if eq .kind "video" }}
+  {{ $vid := replaceRE `^.*(?:youtu\.be/|[?&]v=)([A-Za-z0-9_-]{11}).*$` "$1" .url }}
+  {{ $list := "" }}{{ if findRE `[?&]list=` .url }}{{ $list = replaceRE `^.*[?&]list=([A-Za-z0-9_-]+).*$` "$1" .url }}{{ end }}
+  {{ $sec := cond (eq $it.category "thesis") "defesas" "apresentacoes" }}
+  {{ $cards = $cards | append (dict "id" $vid "playlist" $list "secao" $sec "titulo" $it.title "desc" (delimit (first 3 $it.authors) "; ") "ano" $it.year "autores" (delimit $it.authors " ") "chave" $it.key) }}
+{{ end }}{{ end }}{{ end }}{{ end }}
+
+<article class="content-page videos-page">
+  <p class="eyebrow">{{ if $en }}Media{{ else }}Mídia{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  <p><a href="{{ $cfg.canal }}" target="_blank" rel="noopener">{{ if $en }}All videos on the HiPES YouTube channel →{{ else }}Todos os vídeos no canal HiPES do YouTube →{{ end }}</a></p>
+
+  <div class="publication-filters" role="group" aria-label="{{ if $en }}Filter videos{{ else }}Filtrar vídeos{{ end }}">
+    <button type="button" data-filter="all" aria-pressed="true">{{ if $en }}All{{ else }}Todos{{ end }}</button>
+    {{ range $cfg.secoes }}{{ $s := .id }}{{ if gt (len (where $cards "secao" $s)) 0 }}
+      <button type="button" data-filter="{{ .id }}" aria-pressed="false">{{ cond $en .en .pt }}</button>
+    {{ end }}{{ end }}
+  </div>
+  <input type="search" class="publication-search video-search" placeholder="{{ if $en }}Search videos…{{ else }}Buscar vídeos…{{ end }}" aria-label="{{ if $en }}Search videos{{ else }}Buscar vídeos{{ end }}">
+  <p class="publication-filter-status video-status" aria-live="polite"></p>
+
+  {{ range $cfg.secoes }}
+    {{ $s := .id }}{{ $items := where $cards "secao" $s }}
+    {{ if $items }}
+    <section class="video-section" data-secao="{{ $s }}">
+      <h2>{{ cond $en .en .pt }}</h2>
+      <div class="video-grid">
+        {{ range sort $items "ano" "desc" }}
+          {{ $embed := printf "https://www.youtube-nocookie.com/embed/%s" .id }}
+          {{ if and .playlist (not .id) }}{{ $embed = printf "https://www.youtube-nocookie.com/embed/videoseries?list=%s" .playlist }}
+          {{ else if .playlist }}{{ $embed = printf "%s?list=%s" $embed .playlist }}{{ end }}
+          <figure class="video-card" data-secao="{{ $s }}" data-search="{{ printf "%s %s %v" .titulo .autores .ano | lower }}">
+            <button type="button" class="video-thumb" data-embed="{{ $embed }}" aria-label="{{ if $en }}Play{{ else }}Reproduzir{{ end }}: {{ .titulo }}">
+              {{ if .id }}<img src="https://i.ytimg.com/vi/{{ .id }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">{{ else }}<span class="video-ph" aria-hidden="true">{{ .titulo }}</span>{{ end }}
+              <span class="video-play" aria-hidden="true">▶</span>
+            </button>
+            <figcaption>
+              <strong>{{ .titulo }}</strong>
+              {{ with .desc }}<small>{{ . }}</small>{{ end }}
+              <small>
+                {{ with .ano }}{{ if ne . 0 }}{{ . }} · {{ end }}{{ end }}<a href="{{ if .id }}https://www.youtube.com/watch?v={{ .id }}{{ with .playlist }}&list={{ . }}{{ end }}{{ else }}https://www.youtube.com/playlist?list={{ .playlist }}{{ end }}" target="_blank" rel="noopener">YouTube</a>
+                {{ with .chave }} · <a href="{{ (site.GetPage "/publications").RelPermalink }}#{{ . }}">{{ if $en }}publication{{ else }}publicação{{ end }}</a>{{ end }}
+              </small>
+            </figcaption>
+          </figure>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  {{ end }}
+</article>
+{{ $js := resources.Get "js/videos.js" | minify }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}
