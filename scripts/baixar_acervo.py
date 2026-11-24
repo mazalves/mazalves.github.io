@@ -24,7 +24,7 @@ Como funciona
      static/pdf/_conferir/ e avisa — evita repetir o problema de baixar a versão errada.
   4. Depois rode: python3 scripts/bib2json.py
 """
-import argparse, difflib, re, subprocess, sys, time, urllib.parse, urllib.request
+import argparse, difflib, re, ssl, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,10 +36,32 @@ UA = {"User-Agent": "Mozilla/5.0 (site pessoal; script de uso pessoal)"}
 HANDLE_RE = re.compile(r"(?:handle(?:\.net)?/|handle/)(1884/\d+)")
 
 
+INSEGURO = False     # --inseguro: não verifica o certificado (só para hosts *.ufpr.br)
+AVISO_SSL = """
+ERRO de certificado SSL ao abrir o Acervo ({host}).
+O servidor da UFPR envia a cadeia de certificados incompleta (navegadores completam, o Python não).
+Opções:
+  1) rode de novo com --inseguro  (pula a verificação do certificado SOMENTE para hosts *.ufpr.br;
+     o script só lê páginas públicas e confere que o arquivo baixado é PDF e tem o título esperado);
+  2) ou instale os certificados: no Ubuntu  sudo apt install ca-certificates && sudo update-ca-certificates
+"""
+
+
 def http(url, binary=False):
     req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=60) as r:
-        data = r.read()
+    host = urllib.parse.urlparse(url).hostname or ""
+    ctx = None
+    if INSEGURO and host.endswith("ufpr.br"):
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+    try:
+        with urllib.request.urlopen(req, timeout=60, context=ctx) as r:
+            data = r.read()
+    except urllib.error.URLError as ex:
+        if isinstance(ex.reason, ssl.SSLCertVerificationError):
+            sys.exit(AVISO_SSL.format(host=host))
+        raise
     return data if binary else data.decode("utf-8", "replace")
 
 
@@ -135,11 +157,14 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--only")
     ap.add_argument("--buscar", action="store_true", help="busca por título quando não há handle")
+    ap.add_argument("--inseguro", action="store_true", help="não verifica o certificado SSL de *.ufpr.br")
     ap.add_argument("--orientados", metavar="NOME")
     ap.add_argument("--handle", metavar="N")
     ap.add_argument("--min", type=float, default=0.6, help="mínimo de palavras do título na 1ª página")
     a = ap.parse_args()
 
+    global INSEGURO
+    INSEGURO = a.inseguro
     entries = parse_bib((ROOT / "bib/publicacoes.bib").read_text(encoding="utf-8"))
     if a.handle:
         print(rascunho_bib(a.handle, metadados(a.handle)))

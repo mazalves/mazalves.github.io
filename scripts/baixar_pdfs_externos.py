@@ -19,7 +19,7 @@ política de autoarquivamento. Use para anais abertos, preprints e trabalhos seu
 Se o site pedir login ou bloquear robôs, o script avisa e você baixa pelo navegador, salvando como
 static/pdf/<chave>.pdf.
 """
-import argparse, sys, time, urllib.error, urllib.request
+import argparse, ssl, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -31,9 +31,17 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, 
 LIMITE_MB = 90          # GitHub recusa arquivos > 100 MB
 
 
+INSEGURO = False
+
+
 def baixar(url):
     req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=90) as r:
+    ctx = None
+    if INSEGURO and (urllib.parse.urlparse(url).hostname or "").endswith("ufpr.br"):
+        ctx = ssl.create_default_context()           # servidores da UFPR às vezes têm cadeia SSL incompleta
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+    with urllib.request.urlopen(req, timeout=90, context=ctx) as r:
         dados = r.read(LIMITE_MB * 1024 * 1024 + 1)
         tipo = r.headers.get("Content-Type", "")
     return dados, tipo
@@ -44,10 +52,13 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--only")
     ap.add_argument("--forcar", action="store_true")
+    ap.add_argument("--inseguro", action="store_true", help="não verifica o certificado SSL de *.ufpr.br")
     ap.add_argument("--bib", default=str(ROOT / "bib" / "publicacoes.bib"))
     ap.add_argument("--saida", default=str(ROOT / "static" / "pdf"))
     a = ap.parse_args()
 
+    global INSEGURO
+    INSEGURO = a.inseguro
     saida = Path(a.saida)
     saida.mkdir(parents=True, exist_ok=True)
     entradas = parse_bib(Path(a.bib).read_text(encoding="utf-8"))
