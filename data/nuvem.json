@@ -73,10 +73,10 @@
    "q": "cloud|nuvem"
   },
   {
-   "en": "optimization",
-   "pt": "otimização",
+   "en": "memory access",
+   "pt": "acesso à memória",
    "n": 7,
-   "q": "optimize|otimização"
+   "q": "access|acesso"
   },
   {
    "en": "vector",
@@ -189,8 +189,8 @@
   {
    "en": "simulation",
    "pt": "simulação",
-   "n": 14,
-   "q": "simulator|simulação|simulation|simulations"
+   "n": 15,
+   "q": "simulator|simulação|simulation|simulador"
   },
   {
    "en": "processors",
@@ -223,16 +223,16 @@
    "q": "técnicas|technique|techniques"
   },
   {
-   "en": "memory access",
-   "pt": "acesso à memória",
-   "n": 7,
-   "q": "access|acesso"
-  },
-  {
    "en": "mechanisms",
    "pt": "mecanismos",
-   "n": 6,
+   "n": 7,
    "q": "mechanism|mecanismo"
+  },
+  {
+   "en": "optimization",
+   "pt": "otimização",
+   "n": 7,
+   "q": "optimize|otimização"
   },
   {
    "en": "energy",

@@ -1,9 +1,64 @@
 {
- "count": 168,
+ "count": 170,
  "years": [
   {
    "year": 2026,
    "items": [
+    {
+     "key": "2026-JPM-Santos",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Linkable: um mecanismo de comunicação de componentes arquiteturais",
+     "authors": [
+      "Vinícius Jeremias dos Santos",
+      "Gabriel Gioia de Brito",
+      "Marco Antonio Zanata Alves"
+     ],
+     "year": 2026,
+     "venue": "Anais dos Seminários de Microeletrônica do Paraná (SeMicro-PR), Jornada Paranaense de Microeletrônica (JPM)",
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2026-JPM-Santos.pdf",
+       "kind": "pdf"
+      },
+      {
+       "label": "Link",
+       "url": "https://jpm.ufpr.br/anais/",
+       "kind": "link"
+      }
+     ],
+     "bibtex": "@inproceedings{2026-JPM-Santos,\n  author = {Vin{\\'\\i}cius Jeremias dos Santos and\n                 Gabriel Gioia de Brito and\n                 Marco Antonio Zanata Alves},\n  title = {Linkable: um mecanismo de comunica{\\c{c}}{\\~a}o de componentes arquiteturais},\n  booktitle = {Anais dos Semin{\\'a}rios de Microeletr{\\^o}nica do Paran{\\'a} (SeMicro-PR), Jornada Paranaense de Microeletr{\\^o}nica (JPM)},\n  address = {Curitiba},\n  year = {2026},\n  issn = {2675-066X},\n  url = {https://jpm.ufpr.br/anais/},\n}"
+    },
+    {
+     "key": "2026-JPM-Brito",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Projeto de um simulador microarquitetural",
+     "authors": [
+      "Gabriel Gioia de Brito",
+      "Vinícius Jeremias dos Santos",
+      "Fernando de Barros Castro",
+      "Bruno Krugel",
+      "Daniel Wesley Freitas Siqueira",
+      "Marco Antonio Zanata Alves"
+     ],
+     "year": 2026,
+     "venue": "Anais dos Seminários de Microeletrônica do Paraná (SeMicro-PR), Jornada Paranaense de Microeletrônica (JPM)",
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2026-JPM-Brito.pdf",
+       "kind": "pdf"
+      },
+      {
+       "label": "Link",
+       "url": "https://jpm.ufpr.br/anais/",
+       "kind": "link"
+      }
+     ],
+     "bibtex": "@inproceedings{2026-JPM-Brito,\n  author = {Gabriel Gioia de Brito and\n                 Vin{\\'\\i}cius Jeremias dos Santos and\n                 Fernando de Barros Castro and\n                 Bruno Krugel and\n                 Daniel Wesley Freitas Siqueira and\n                 Marco Antonio Zanata Alves},\n  title = {Projeto de um simulador microarquitetural},\n  booktitle = {Anais dos Semin{\\'a}rios de Microeletr{\\^o}nica do Paran{\\'a} (SeMicro-PR), Jornada Paranaense de Microeletr{\\^o}nica (JPM)},\n  address = {Curitiba},\n  year = {2026},\n  issn = {2675-066X},\n  url = {https://jpm.ufpr.br/anais/},\n}"
+    },
     {
      "key": "2026-ACC-Salmen",
      "type": "inproceedings",
@@ -2523,11 +2578,6 @@
        "kind": "pdf"
       },
       {
-       "label": "PDF",
-       "url": "http://www.vldb.org/pvldb/vol13/p334-kepe.pdf",
-       "kind": "pdf"
-      },
-      {
        "label": "DOI",
        "url": "https://doi.org/10.14778/3368289.3368298",
        "kind": "doi"
@@ -3016,11 +3066,6 @@
       {
        "label": "PDF",
        "url": "/pdf/2018-VLDB-Tome.pdf",
-       "kind": "pdf"
-      },
-      {
-       "label": "PDF",
-       "url": "http://www.adms-conf.org/2018-camera-ready/01_adms_camera_ready.pdf",
        "kind": "pdf"
       },
       {

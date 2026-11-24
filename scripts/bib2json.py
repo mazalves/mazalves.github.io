@@ -190,9 +190,11 @@ def local_files(key):
 
 def build_links(f, key):
     links = []
-    for kind, label, name in local_files(key):
+    locais = local_files(key)
+    for kind, label, name in locais:
         links.append({"label": label if label != "PDF" else "PDF", "url": f"/pdf/{name}", "kind": kind})
-    if f.get("pdfurl"):
+    tem_pdf_local = any(l["kind"] == "pdf" and l["url"] == f"/pdf/{key}.pdf" for l in links)
+    if f.get("pdfurl") and not tem_pdf_local:           # pdfurl só vale enquanto não há cópia local
         links.append({"label": "PDF", "url": f["pdfurl"], "kind": "pdf"})
     if f.get("doi"):
         links.append({"label": "DOI", "url": "https://doi.org/" + latex2text(f["doi"]), "kind": "doi"})
