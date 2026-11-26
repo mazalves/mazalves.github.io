@@ -816,6 +816,7 @@
        "kind": "pdf"
       }
      ],
+     "award": "Terceiro melhor artigo",
      "bibtex": "@inproceedings{2023-KDMILE-Bravo,\n  author = {Dayane Perez Bravo and\n                 Marco Antonio Zanata Alves and\n                 Leandro Augusto Ensina and\n                 Luiz Eduardo Soares de Oliveira},\n  title = {Evaluating Strategies to Predict Student Dropout of a Bachelor's Degree in Computer Science},\n  booktitle = {Symposium on Knowledge Discovery, Mining and Learning (KDMiLe)},\n  year = {2023},\n}"
     },
     {
