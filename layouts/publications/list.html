@@ -42,7 +42,7 @@
               <div class="publication-meta">
                 {{ with .authors }}<span>{{ delimit . "; " }}</span>{{ end }}
                 {{ with $label }}<span>{{ . }}</span>{{ end }}
-                {{ with .venue }}<span>{{ . }}</span>{{ end }}
+                {{ with .venue }}<span>{{ . }}</span>{{ end }}{{ with .note }}<span class="publication-note"> — {{ . }}</span>{{ end }}
               </div>
               <div class="publication-links">
                 {{ range .links }}

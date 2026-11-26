@@ -10,7 +10,7 @@ hero_image: "/img/retrato.jpg"
 **Adjunct professor and researcher** — Department of Informatics, Federal University of Paraná (UFPR), Curitiba, Brazil (since 2016).
 
 - **CNPq Research Productivity Fellow — Level 2 (PQ-2).**
-- Vice-coordinator of the Scientific Modeling and Computing Center ([NMCC](https://cicti.ufpr.br/nucleos/nmcc/coordenacao/), CICTI/UFPR), 2026–2027.
+- Vice-coordinator of the Scientific Modeling and Computing Center ([NMCC](https://cicti.ufpr.br/nucleos/nmcc/coordenacao/), CICTI/UFPR), 2025–2027.
 - Deputy coordinator of the [undergraduate Computer Science program](http://bcc.ufpr.br/) at UFPR (2017–2020).
 - Postdoctoral internship — Informatics Institute, Federal University of Rio Grande do Sul (UFRGS), Porto Alegre (2014–2015).
 - Temporary professor — Informatics Institute, UFRGS, Porto Alegre (2014–2015).

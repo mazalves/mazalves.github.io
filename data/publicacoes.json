@@ -392,14 +392,20 @@
      "key": "2024-UFPR-Pavam",
      "type": "mastersthesis",
      "category": "thesis",
-     "title": "Lightning nowcasting with machine learning for Southern/Southeastern South America",
+     "title": "A machine learning model for cloud-to-ground lightning nowcasting",
      "authors": [
       "Luis Guilherme Pavam Junior"
      ],
      "year": 2024,
      "venue": "UFPR",
-     "links": [],
-     "bibtex": "@mastersthesis{2024-UFPR-Pavam,\n  author = {Luis Guilherme Pavam Junior},\n  title = {Lightning nowcasting with machine learning for Southern/Southeastern South America},\n  school = {UFPR},\n  year = {2024},\n}"
+     "links": [
+      {
+       "label": "Link",
+       "url": "https://hdl.handle.net/1884/94571",
+       "kind": "link"
+      }
+     ],
+     "bibtex": "@mastersthesis{2024-UFPR-Pavam,\n  author = {Luis Guilherme Pavam Junior},\n  title = {A machine learning model for cloud-to-ground lightning nowcasting},\n  school = {UFPR},\n  year = {2024},\n  url = {https://hdl.handle.net/1884/94571},\n}"
     },
     {
      "key": "2024-UFPR-Pereira",
@@ -3275,7 +3281,7 @@
     {
      "key": "2017-SAMOS-Oliveira",
      "type": "inproceedings",
-     "category": "software",
+     "category": "paper",
      "title": "A generic processing in memory cycle accurate simulator under hybrid memory cube architecture",
      "authors": [
       "Geraldo F. Oliveira",
@@ -3303,7 +3309,7 @@
     {
      "key": "2017-SBESC-Pires",
      "type": "inproceedings",
-     "category": "software",
+     "category": "paper",
      "title": "Trace-Driven Extension for Noxim Simulator",
      "authors": [
       "Ivan Luiz Pedroso Pires",
@@ -3578,7 +3584,7 @@
     {
      "key": "2016-PC-Moreira",
      "type": "article",
-     "category": "software",
+     "category": "paper",
      "title": "A dynamic block-level execution profiler",
      "authors": [
       "Francis B. Moreira",
@@ -3695,7 +3701,7 @@
     {
      "key": "2015-HPCC-Alves",
      "type": "inproceedings",
-     "category": "software",
+     "category": "paper",
      "title": "SiNUCA: A Validated Micro-Architecture Simulator",
      "authors": [
       "Marco A. Z. Alves",
@@ -4093,6 +4099,34 @@
      "number": "1",
      "pages": "97--116",
      "bibtex": "@article{2012-IJNC-Cruz,\n  author = {Eduardo Henrique Molina da Cruz and\n                 Marco Antonio Zanata Alves and\n                 Alexandre Carissimi and\n                 Philippe Olivier Alexandre Navaux and\n                 Christiane Pousa Ribeiro and\n                 Jean{-}Fran{\\c{c}}ois M{\\'{e}}haut},\n  title = {Memory-aware Thread and Data Mapping for Hierarchical Multi-core Platforms},\n  journal = {Int. J. Netw. Comput.},\n  volume = {2},\n  number = {1},\n  pages = {97--116},\n  year = {2012},\n  url = {http://www.ijnc.org/index.php/ijnc/article/view/36},\n}"
+    },
+    {
+     "key": "2012-WEAC-Alves",
+     "type": "incollection",
+     "category": "paper",
+     "title": "Ensino de arquiteturas de processadores many-core e memórias cache utilizando o simulador Simics",
+     "authors": [
+      "Marco A. Z. Alves",
+      "Henrique C. Freitas",
+      "Philippe O. A. Navaux"
+     ],
+     "year": 2012,
+     "venue": "Arquitetura de Computadores: educação, ensino e aprendizado",
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2012-WEAC-Alves.pdf",
+       "kind": "pdf"
+      },
+      {
+       "label": "Link",
+       "url": "http://www.ppgee.pucminas.br/weac/Livro/Livro-AC-EEA-v2.pdf",
+       "kind": "link"
+      }
+     ],
+     "pages": "78--110",
+     "note": "Texto do minicurso ministrado no WEAC 2008 (Campo Grande)",
+     "bibtex": "@incollection{2012-WEAC-Alves,\n  author = {Marco A. Z. Alves and\n                 Henrique C. Freitas and\n                 Philippe O. A. Navaux},\n  title = {Ensino de arquiteturas de processadores many-core e mem{\\'o}rias cache utilizando o simulador Simics},\n  booktitle = {Arquitetura de Computadores: educa{\\c{c}}{\\~a}o, ensino e aprendizado},\n  publisher = {Sociedade Brasileira de Computa{\\c{c}}{\\~a}o (SBC)},\n  address = {Porto Alegre},\n  pages = {78--110},\n  note = {Texto do minicurso ministrado no WEAC 2008 (Campo Grande)},\n  year = {2012},\n  url = {http://www.ppgee.pucminas.br/weac/Livro/Livro-AC-EEA-v2.pdf},\n}"
     }
    ]
   },
@@ -4400,8 +4434,8 @@
     },
     {
      "key": "2010-SEMISH-Mor",
-     "type": "misc",
-     "category": "software",
+     "type": "inproceedings",
+     "category": "paper",
      "title": "Eficiência Energética em Computação de Alto Desempenho: Uma Abordagem em Arquitetura e Programação para Green Computing",
      "authors": [
       "Stefano D. K. Mor",
@@ -4419,7 +4453,7 @@
        "kind": "pdf"
       }
      ],
-     "bibtex": "@misc{2010-SEMISH-Mor,\n  author = {Stefano D. K. Mor and\n                 Marco A. Z. Alves and\n                 João V. F. Lima and\n                 Nicolas Maillard and\n                 Philippe O. A. Navaux},\n  title = {Eficiência Energética em Computação de Alto Desempenho: Uma Abordagem em Arquitetura e Programação para Green Computing},\n  howpublished = {37th Seminário Integrado de Software e Hardware (SEMISH)},\n  address = {Belo Horizonte - Brazil},\n  year = {2010},\n}"
+     "bibtex": "@inproceedings{2010-SEMISH-Mor,\n  author = {Stefano D. K. Mor and\n                 Marco A. Z. Alves and\n                 João V. F. Lima and\n                 Nicolas Maillard and\n                 Philippe O. A. Navaux},\n  title = {Eficiência Energética em Computação de Alto Desempenho: Uma Abordagem em Arquitetura e Programação para Green Computing},\n  booktitle = {37th Seminário Integrado de Software e Hardware (SEMISH)},\n  address = {Belo Horizonte - Brazil},\n  year = {2010},\n}"
     },
     {
      "key": "2010-ERADRS-Ferreira",
@@ -4564,7 +4598,7 @@
       "Philippe O. A. Navaux"
      ],
      "year": 2008,
-     "venue": "2nd Workshop sobre Educação em Arquitetura de Computadores (WEAC)",
+     "venue": "2nd Workshop sobre Educação em Arquitetura de Computadores (WEAC), junto ao SBAC-PAD",
      "links": [
       {
        "label": "PDF",
@@ -4573,7 +4607,7 @@
       }
      ],
      "pages": "1--8",
-     "bibtex": "@inproceedings{2008-WEAC-Freitas,\n  author = {Henrique C. Freitas and\n                 Marco A. Z. Alves and\n                 Nicolas Maillard and\n                 Philippe O. A. Navaux},\n  title = {Ensino de Arquiteturas de Processadores Multi-Core Através de um Sistema de Simulação Completo e da Experiência de um Projeto de Pesquisa},\n  booktitle = {2nd Workshop sobre Educação em Arquitetura de Computadores (WEAC)},\n  pages = {1--8},\n  year = {2008},\n}"
+     "bibtex": "@inproceedings{2008-WEAC-Freitas,\n  author = {Henrique C. Freitas and\n                 Marco A. Z. Alves and\n                 Nicolas Maillard and\n                 Philippe O. A. Navaux},\n  title = {Ensino de Arquiteturas de Processadores Multi-Core Através de um Sistema de Simulação Completo e da Experiência de um Projeto de Pesquisa},\n  booktitle = {2nd Workshop sobre Educação em Arquitetura de Computadores (WEAC), junto ao SBAC-PAD},\n  address = {Campo Grande - Brazil},\n  pages = {1--8},\n  year = {2008},\n}"
     },
     {
      "key": "2008-ERADRS-Alvesa",
@@ -4616,33 +4650,6 @@
       }
      ],
      "bibtex": "@inproceedings{2008-ERADRS-Freitas,\n  author = {Henrique C. Freitas and\n                 Marco A. Z. Alves and\n                 Philippe O. A. Navaux},\n  title = {Utilização de uma Metodologia de Projeto para Arquiteturas de Processadores Multi-Core},\n  booktitle = {Escola Regional de Alto Desempenho (ERAD-RS)},\n  year = {2008},\n}"
-    },
-    {
-     "key": "2008-WEAC-Alves",
-     "type": "incollection",
-     "category": "paper",
-     "title": "Ensino de arquiteturas de processadores many-core e memórias cache utilizando o simulador Simics",
-     "authors": [
-      "Marco A. Z. Alves",
-      "Henrique C. Freitas",
-      "Philippe O. A. Navaux"
-     ],
-     "year": 2008,
-     "venue": "Arquitetura de Computadores: educação, ensino e aprendizado",
-     "links": [
-      {
-       "label": "PDF",
-       "url": "/pdf/2008-WEAC-Alves.pdf",
-       "kind": "pdf"
-      },
-      {
-       "label": "Link",
-       "url": "http://www.ppgee.pucminas.br/weac/Livro/Livro-AC-EEA-v2.pdf",
-       "kind": "link"
-      }
-     ],
-     "pages": "78--110",
-     "bibtex": "@incollection{2008-WEAC-Alves,\n  author = {Marco A. Z. Alves and\n                 Henrique C. Freitas and\n                 Philippe O. A. Navaux},\n  title = {Ensino de arquiteturas de processadores many-core e mem{\\'o}rias cache utilizando o simulador Simics},\n  booktitle = {Arquitetura de Computadores: educa{\\c{c}}{\\~a}o, ensino e aprendizado},\n  publisher = {Sociedade Brasileira de Computa{\\c{c}}{\\~a}o (SBC)},\n  address = {Porto Alegre},\n  pages = {78--110},\n  year = {2008},\n  url = {http://www.ppgee.pucminas.br/weac/Livro/Livro-AC-EEA-v2.pdf},\n}"
     }
    ]
   },

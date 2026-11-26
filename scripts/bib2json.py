@@ -240,6 +240,8 @@ def convert(entry):
         item["kind"] = latex2text(f["type"])
     if f.get("award"):
         item["award"] = latex2text(f["award"])
+    if f.get("note"):
+        item["note"] = latex2text(f["note"])
     if f.get("role") == "co":
         item["role"] = "co"          # coorientação (teses)
     item["bibtex"] = bibtex_text(entry)

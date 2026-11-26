@@ -10,7 +10,7 @@ hero_image: "/img/retrato.jpg"
 **Professor Adjunto e Pesquisador** — Departamento de Informática, Universidade Federal do Paraná (UFPR), Curitiba, Brasil (desde 2016).
 
 - **Bolsista de Produtividade em Pesquisa do CNPq — Nível 2 (PQ-2).**
-- Vice-coordenador do Núcleo de Modelagem e Computação Científica ([NMCC](https://cicti.ufpr.br/nucleos/nmcc/coordenacao/), CICTI/UFPR), 2026–2027.
+- Vice-coordenador do Núcleo de Modelagem e Computação Científica ([NMCC](https://cicti.ufpr.br/nucleos/nmcc/coordenacao/), CICTI/UFPR), 2025–2027.
 - Vice-coordenador do [Curso de Bacharelado em Ciência da Computação](http://bcc.ufpr.br/) da UFPR (2017–2020).
 - Pós-doutorado — Instituto de Informática, Universidade Federal do Rio Grande do Sul (UFRGS), Porto Alegre (2014–2015).
 - Professor temporário — Instituto de Informática, UFRGS, Porto Alegre (2014–2015).
