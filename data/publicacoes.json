@@ -1,5 +1,5 @@
 {
- "count": 181,
+ "count": 183,
  "years": [
   {
    "year": 2026,
@@ -242,6 +242,60 @@
      ],
      "kind": "Trabalho de Conclusão de Curso",
      "bibtex": "@mastersthesis{2026-UFPR-Krugel,\n  author = {Bruno Kr{\\\"u}gel},\n  title = {An{\\'a}lise da influ{\\^e}ncia das unidades funcionais compartilhadas em processadores com {Simultaneous Multithreading}},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2026},\n}"
+    },
+    {
+     "key": "2026-WEAC-Galante",
+     "type": "inproceedings",
+     "category": "paper",
+     "title": "Ensino de Processamento de Alto Desempenho nos Cursos de Graduação do Sul do Brasil: Desafios e Lições Aprendidas",
+     "authors": [
+      "Guilherme Galante",
+      "Claudio Schepke",
+      "Rodrigo da Rosa Righi",
+      "Guilherme Piêgas Koslovski",
+      "Maurício Aronne Pillon",
+      "Lucas Mello Schnorr",
+      "Arthur Francisco Lorenzon",
+      "Philippe O. A. Navaux",
+      "Márcio Castro",
+      "César A. F. De Rose",
+      "Tiago Ferreto",
+      "Marco Antonio Zanata Alves",
+      "João V. F. Lima",
+      "Gerson Geraldo H. Cavalheiro"
+     ],
+     "year": 2026,
+     "venue": "Workshop sobre Educação em Arquitetura de Computadores (WEAC)",
+     "links": [],
+     "note": "Artigo aceito",
+     "bibtex": "@inproceedings{2026-WEAC-Galante,\n  author = {Guilherme Galante and\n                 Claudio Schepke and\n                 Rodrigo da Rosa Righi and\n                 Guilherme Pi{\\^e}gas Koslovski and\n                 Maur{\\'\\i}cio Aronne Pillon and\n                 Lucas Mello Schnorr and\n                 Arthur Francisco Lorenzon and\n                 Philippe O. A. Navaux and\n                 M{\\'a}rcio Castro and\n                 C{\\'e}sar A. F. De Rose and\n                 Tiago Ferreto and\n                 Marco Antonio Zanata Alves and\n                 Jo{\\~a}o V. F. Lima and\n                 Gerson Geraldo H. Cavalheiro},\n  title = {Ensino de Processamento de Alto Desempenho nos Cursos de Gradua{\\c{c}}{\\~a}o do Sul do Brasil: Desafios e Li{\\c{c}}{\\~o}es Aprendidas},\n  booktitle = {Workshop sobre Educa{\\c{c}}{\\~a}o em Arquitetura de Computadores (WEAC)},\n  year = {2026},\n  note = {Artigo aceito},\n}"
+    },
+    {
+     "key": "2026-IJCAE-Galante",
+     "type": "article",
+     "category": "paper",
+     "title": "Ensino de Processamento de Alto Desempenho nos Cursos de Graduação do Sul do Brasil: Desafios e Lições Aprendidas",
+     "authors": [
+      "Guilherme Galante",
+      "Claudio Schepke",
+      "Rodrigo da Rosa Righi",
+      "Guilherme Piêgas Koslovski",
+      "Maurício Aronne Pillon",
+      "Lucas Mello Schnorr",
+      "Arthur Francisco Lorenzon",
+      "Philippe O. A. Navaux",
+      "Márcio Castro",
+      "César A. F. De Rose",
+      "Tiago Ferreto",
+      "Marco Antonio Zanata Alves",
+      "João V. F. Lima",
+      "Gerson Geraldo H. Cavalheiro"
+     ],
+     "year": 2026,
+     "venue": "International Journal of Computer Architecture Education (IJCAE)",
+     "links": [],
+     "note": "Artigo aceito",
+     "bibtex": "@article{2026-IJCAE-Galante,\n  author = {Guilherme Galante and\n                 Claudio Schepke and\n                 Rodrigo da Rosa Righi and\n                 Guilherme Pi{\\^e}gas Koslovski and\n                 Maur{\\'\\i}cio Aronne Pillon and\n                 Lucas Mello Schnorr and\n                 Arthur Francisco Lorenzon and\n                 Philippe O. A. Navaux and\n                 M{\\'a}rcio Castro and\n                 C{\\'e}sar A. F. De Rose and\n                 Tiago Ferreto and\n                 Marco Antonio Zanata Alves and\n                 Jo{\\~a}o V. F. Lima and\n                 Gerson Geraldo H. Cavalheiro},\n  title = {Ensino de Processamento de Alto Desempenho nos Cursos de Gradua{\\c{c}}{\\~a}o do Sul do Brasil: Desafios e Li{\\c{c}}{\\~o}es Aprendidas},\n  journal = {International Journal of Computer Architecture Education (IJCAE)},\n  year = {2026},\n  note = {Artigo aceito},\n}"
     }
    ]
   },

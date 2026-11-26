@@ -1,12 +1,6 @@
 {
  "termos": [
   {
-   "en": "bypassing",
-   "pt": "bypassing",
-   "n": 3,
-   "q": "bypassing"
-  },
-  {
    "en": "adaptable",
    "pt": "adaptable",
    "n": 3,
@@ -43,22 +37,28 @@
    "q": "execution"
   },
   {
-   "en": "coral",
-   "pt": "coral",
+   "en": "dataset",
+   "pt": "dataset",
    "n": 4,
-   "q": "coral"
+   "q": "dataset"
   },
   {
-   "en": "SIMD",
-   "pt": "SIMD",
+   "en": "computation",
+   "pt": "computation",
    "n": 4,
-   "q": "simd"
+   "q": "computation"
   },
   {
-   "en": "precipitation",
-   "pt": "precipitação",
+   "en": "DRAM",
+   "pt": "DRAM",
+   "n": 4,
+   "q": "dram"
+  },
+  {
+   "en": "hash",
+   "pt": "hash",
    "n": 5,
-   "q": "precipitação|precipitation"
+   "q": "hash"
   },
   {
    "en": "mechanisms",
@@ -127,10 +127,10 @@
    "q": "efficient|efficiency|eficiente|eficiência"
   },
   {
-   "en": "performance",
-   "pt": "desempenho",
+   "en": "evaluation",
+   "pt": "avaliação",
    "n": 17,
-   "q": "performance|desempenho"
+   "q": "avaliação|evaluating|evaluation"
   },
   {
    "en": "machine learning",
@@ -145,10 +145,10 @@
    "q": "data|dados"
   },
   {
-   "en": "architecture",
-   "pt": "arquitetura",
-   "n": 24,
-   "q": "arquiteturas|architectures|architecture|arquitetura"
+   "en": "processing",
+   "pt": "processamento",
+   "n": 26,
+   "q": "processing|processamento"
   },
   {
    "en": "memory",
@@ -157,10 +157,10 @@
    "q": "memory|memória|memories|memórias"
   },
   {
-   "en": "processing",
-   "pt": "processamento",
+   "en": "architecture",
+   "pt": "arquitetura",
    "n": 24,
-   "q": "processing|processamento"
+   "q": "arquiteturas|architectures|architecture|arquitetura"
   },
   {
    "en": "cache",
@@ -169,10 +169,10 @@
    "q": "cache|caches"
   },
   {
-   "en": "evaluation",
-   "pt": "avaliação",
-   "n": 17,
-   "q": "avaliação|evaluating|evaluation"
+   "en": "performance",
+   "pt": "desempenho",
+   "n": 19,
+   "q": "performance|desempenho"
   },
   {
    "en": "PIM",
@@ -241,28 +241,34 @@
    "q": "hardware"
   },
   {
-   "en": "hash",
-   "pt": "hash",
+   "en": "ensino",
+   "pt": "ensino",
    "n": 5,
-   "q": "hash"
+   "q": "ensino"
   },
   {
-   "en": "DRAM",
-   "pt": "DRAM",
-   "n": 4,
-   "q": "dram"
+   "en": "precipitation",
+   "pt": "precipitação",
+   "n": 5,
+   "q": "precipitação|precipitation"
   },
   {
-   "en": "computation",
-   "pt": "computation",
+   "en": "SIMD",
+   "pt": "SIMD",
    "n": 4,
-   "q": "computation"
+   "q": "simd"
   },
   {
-   "en": "dataset",
-   "pt": "dataset",
+   "en": "coral",
+   "pt": "coral",
    "n": 4,
-   "q": "dataset"
+   "q": "coral"
+  },
+  {
+   "en": "desafios",
+   "pt": "desafios",
+   "n": 4,
+   "q": "desafios"
   },
   {
    "en": "lightning",
@@ -293,12 +299,6 @@
    "pt": "accelerators",
    "n": 3,
    "q": "accelerators"
-  },
-  {
-   "en": "array",
-   "pt": "array",
-   "n": 3,
-   "q": "array"
   }
  ]
 }
