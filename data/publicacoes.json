@@ -400,6 +400,11 @@
      "venue": "UFPR",
      "links": [
       {
+       "label": "PDF",
+       "url": "/pdf/2024-UFPR-Pavam.pdf",
+       "kind": "pdf"
+      },
+      {
        "label": "Link",
        "url": "https://hdl.handle.net/1884/94571",
        "kind": "link"
@@ -1404,6 +1409,11 @@
      "venue": "UFPR",
      "links": [
       {
+       "label": "PDF",
+       "url": "/pdf/2022-UFPR-Sokulski.pdf",
+       "kind": "pdf"
+      },
+      {
        "label": "Slides",
        "url": "/pdf/2022-UFPR-Sokulski_slides.pdf",
        "kind": "slides"
@@ -1489,13 +1499,18 @@
      "key": "2022-UFPR-Dominico",
      "type": "phdthesis",
      "category": "thesis",
-     "title": "An Elastic Multi-Core Allocation Mechanism for Database Systems",
+     "title": "Estratégias de mapeamento de threads para processamento eficiente de consultas",
      "authors": [
       "Simone Dominico"
      ],
      "year": 2022,
      "venue": "UFPR",
      "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2022-UFPR-Dominico.pdf",
+       "kind": "pdf"
+      },
       {
        "label": "Slides",
        "url": "/pdf/2022-UFPR-Dominico_slides.pdf",
@@ -1508,7 +1523,7 @@
       }
      ],
      "role": "co",
-     "bibtex": "@phdthesis{2022-UFPR-Dominico,\n  author = {Simone Dominico},\n  title = {An Elastic Multi-Core Allocation Mechanism for Database Systems},\n  school = {UFPR},\n  year = {2022},\n  url = {https://hdl.handle.net/1884/75117},\n}"
+     "bibtex": "@phdthesis{2022-UFPR-Dominico,\n  author = {Simone Dominico},\n  title = {Estratégias de mapeamento de threads para processamento eficiente de consultas},\n  school = {UFPR},\n  year = {2022},\n  url = {https://hdl.handle.net/1884/75117},\n}"
     },
     {
      "key": "2022-UFPR-Bravo",
@@ -1521,6 +1536,11 @@
      "year": 2022,
      "venue": "UFPR",
      "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2022-UFPR-Bravo.pdf",
+       "kind": "pdf"
+      },
       {
        "label": "Vídeo",
        "url": "https://youtu.be/2IMAwFZKvTI?list=PL_9px37PNj6pfjSdRK35zxhLBz6t_F_9f",

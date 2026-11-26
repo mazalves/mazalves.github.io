@@ -73,10 +73,10 @@
    "q": "cloud|nuvem"
   },
   {
-   "en": "memory access",
-   "pt": "acesso à memória",
+   "en": "optimization",
+   "pt": "otimização",
    "n": 7,
-   "q": "access|acesso"
+   "q": "optimize|otimização"
   },
   {
    "en": "vector",
@@ -85,28 +85,28 @@
    "q": "vector|vetorial"
   },
   {
+   "en": "instructions",
+   "pt": "instruções",
+   "n": 8,
+   "q": "instruções|instructions|instruction"
+  },
+  {
    "en": "mapping",
    "pt": "mapeamento",
-   "n": 8,
-   "q": "mapping|mapeamento"
-  },
-  {
-   "en": "parallel",
-   "pt": "paralelo",
    "n": 9,
-   "q": "parallel|paralelo|paralelas"
-  },
-  {
-   "en": "threads",
-   "pt": "threads",
-   "n": 10,
-   "q": "thread|threads"
+   "q": "mapping|mapeamento"
   },
   {
    "en": "databases",
    "pt": "bancos de dados",
-   "n": 11,
+   "n": 10,
    "q": "database|databases"
+  },
+  {
+   "en": "threads",
+   "pt": "threads",
+   "n": 11,
+   "q": "thread|threads"
   },
   {
    "en": "near-data",
@@ -115,22 +115,22 @@
    "q": "near-data"
   },
   {
+   "en": "systems",
+   "pt": "sistemas",
+   "n": 15,
+   "q": "systems|system|sistemas|sistema"
+  },
+  {
    "en": "performance",
    "pt": "desempenho",
    "n": 15,
    "q": "performance|desempenho"
   },
   {
-   "en": "evaluation",
-   "pt": "avaliação",
-   "n": 15,
-   "q": "avaliação|evaluating|evaluation"
-  },
-  {
-   "en": "systems",
-   "pt": "sistemas",
+   "en": "machine learning",
+   "pt": "aprendizado de máquina",
    "n": 16,
-   "q": "systems|system|sistemas|sistema"
+   "q": "machine|aprendizado|aprendizagem|machines"
   },
   {
    "en": "PIM",
@@ -159,7 +159,7 @@
   {
    "en": "processing",
    "pt": "processamento",
-   "n": 23,
+   "n": 24,
    "q": "processing|processamento"
   },
   {
@@ -169,28 +169,28 @@
    "q": "data|dados"
   },
   {
-   "en": "machine learning",
-   "pt": "aprendizado de máquina",
-   "n": 16,
-   "q": "machine|aprendizado|aprendizagem|machines"
-  },
-  {
    "en": "efficiency",
    "pt": "eficiência",
-   "n": 15,
+   "n": 16,
    "q": "efficient|efficiency|eficiente|eficiência"
   },
   {
-   "en": "multi-core",
-   "pt": "multi-core",
+   "en": "evaluation",
+   "pt": "avaliação",
    "n": 15,
-   "q": "multi-core|multicore"
+   "q": "avaliação|evaluating|evaluation"
   },
   {
    "en": "simulation",
    "pt": "simulação",
    "n": 15,
    "q": "simulator|simulação|simulation|simulador"
+  },
+  {
+   "en": "multi-core",
+   "pt": "multi-core",
+   "n": 14,
+   "q": "multi-core|multicore"
   },
   {
    "en": "processors",
@@ -211,10 +211,10 @@
    "q": "análise|analysis"
   },
   {
-   "en": "instructions",
-   "pt": "instruções",
-   "n": 8,
-   "q": "instruções|instructions|instruction"
+   "en": "parallel",
+   "pt": "paralelo",
+   "n": 9,
+   "q": "parallel|paralelo|paralelas"
   },
   {
    "en": "techniques",
@@ -223,16 +223,16 @@
    "q": "técnicas|technique|techniques"
   },
   {
-   "en": "mechanisms",
-   "pt": "mecanismos",
+   "en": "memory access",
+   "pt": "acesso à memória",
    "n": 7,
-   "q": "mechanism|mecanismo"
+   "q": "access|acesso"
   },
   {
-   "en": "optimization",
-   "pt": "otimização",
-   "n": 7,
-   "q": "optimize|otimização"
+   "en": "mechanisms",
+   "pt": "mecanismos",
+   "n": 6,
+   "q": "mecanismo|mechanism"
   },
   {
    "en": "energy",
