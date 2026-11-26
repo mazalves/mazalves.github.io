@@ -294,10 +294,15 @@
        "label": "PDF",
        "url": "/pdf/2025-COTB-Silva.pdf",
        "kind": "pdf"
+      },
+      {
+       "label": "DOI",
+       "url": "https://doi.org/10.14210/cotb.v16.p494-501",
+       "kind": "doi"
       }
      ],
      "pages": "494--501",
-     "bibtex": "@inproceedings{2025-COTB-Silva,\n  author = {Guilherme Eduardo Gonçalves da Silva and\n                 Felipe Duarte Silva and\n                 Gustavo Benitez Frehse and\n                 Rodrigo Machniewicz Sokulski and\n                 Eduardo Todt and\n                 Marco Antonio Zanata Alves},\n  title = {Avaliação de Desempenho de Compressão de Páginas Utilizando o ZRAM},\n  booktitle = {Anais do Computer on the Beach (COTB)},\n  pages = {494--501},\n  year = {2025},\n}"
+     "bibtex": "@inproceedings{2025-COTB-Silva,\n  author = {Guilherme Eduardo Gonçalves da Silva and\n                 Felipe Duarte Silva and\n                 Gustavo Benitez Frehse and\n                 Rodrigo Machniewicz Sokulski and\n                 Eduardo Todt and\n                 Marco Antonio Zanata Alves},\n  title = {Avaliação de Desempenho de Compressão de Páginas Utilizando o ZRAM},\n  booktitle = {Anais do Computer on the Beach (COTB)},\n  pages = {494--501},\n  year = {2025},\n  doi = {10.14210/cotb.v16.p494-501},\n}"
     },
     {
      "key": "2025-UFPR-Nunes",
