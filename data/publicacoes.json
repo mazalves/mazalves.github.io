@@ -1,5 +1,5 @@
 {
- "count": 174,
+ "count": 181,
  "years": [
   {
    "year": 2026,
@@ -343,6 +343,36 @@
      ],
      "kind": "Trabalho de Conclusão de Curso",
      "bibtex": "@mastersthesis{2025-UFPR-Goncalves,\n  author = {Leonardo de Quadros Gon{\\c{c}}alves},\n  title = {An{\\'a}lise de poss{\\'\\i}veis melhorias de desempenho atrav{\\'e}s do uso de instru{\\c{c}}{\\~o}es de mem{\\'o}ria temporais e atemporais},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2025},\n}"
+    },
+    {
+     "key": "2025-SBSEG-Silva",
+     "type": "inproceedings",
+     "category": "paper",
+     "title": "DNApp: Desafios de Manutenção da Integridade em Hosts via Caracterização de Aplicações baseada em Instruções",
+     "authors": [
+      "Felipe Duarte Silva",
+      "Marco Antonio Zanata Alves",
+      "Paulo Lisboa de Almeida",
+      "André Grégio"
+     ],
+     "year": 2025,
+     "venue": "Anais do XXV Simpósio Brasileiro de Cibersegurança (SBSeg 2025)",
+     "links": [],
+     "bibtex": "@inproceedings{2025-SBSEG-Silva,\n  author = {Felipe Duarte Silva and\n                 Marco Antonio Zanata Alves and\n                 Paulo Lisboa de Almeida and\n                 Andr{\\'e} Gr{\\'e}gio},\n  title = {{DNApp}: Desafios de Manuten{\\c{c}}{\\~a}o da Integridade em Hosts via Caracteriza{\\c{c}}{\\~a}o de Aplica{\\c{c}}{\\~o}es baseada em Instru{\\c{c}}{\\~o}es},\n  booktitle = {Anais do XXV Simp{\\'o}sio Brasileiro de Ciberseguran{\\c{c}}a (SBSeg 2025)},\n  publisher = {Sociedade Brasileira de Computa{\\c{c}}{\\~a}o (SBC)},\n  year = {2025},\n}"
+    },
+    {
+     "key": "2025-ERADRS-Brito",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Avaliação de alternativas para parametrização de simuladores: um estudo de caso aplicado ao SiNUCA3",
+     "authors": [
+      "Gabriel Gioia de Brito",
+      "Marco Antonio Zanata Alves"
+     ],
+     "year": 2025,
+     "venue": "Anais da XXV Escola Regional de Alto Desempenho da Região Sul (ERAD-RS 2025)",
+     "links": [],
+     "bibtex": "@inproceedings{2025-ERADRS-Brito,\n  author = {Gabriel Gioia de Brito and\n                 Marco Antonio Zanata Alves},\n  title = {Avalia{\\c{c}}{\\~a}o de alternativas para parametriza{\\c{c}}{\\~a}o de simuladores: um estudo de caso aplicado ao {SiNUCA3}},\n  booktitle = {Anais da XXV Escola Regional de Alto Desempenho da Regi{\\~a}o Sul (ERAD-RS 2025)},\n  publisher = {Sociedade Brasileira de Computa{\\c{c}}{\\~a}o (SBC)},\n  year = {2025},\n}"
     }
    ]
   },
@@ -516,6 +546,77 @@
      ],
      "kind": "Trabalho de Conclusão de Curso",
      "bibtex": "@mastersthesis{2024-UFPR-Wosniack,\n  author = {André Bernardo Wosniack},\n  title = {Simulação dos efeitos da radiação utilizando injeção de falhas via DVFS},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2024},\n}"
+    },
+    {
+     "key": "2024-SBSEG-Torres",
+     "type": "inproceedings",
+     "category": "paper",
+     "title": "Observação de Ataques contra a Memória do Kernel Android: Desafios e Soluções",
+     "authors": [
+      "Cláudio Torres Júnior",
+      "Jorge Correia",
+      "João Pincovscy",
+      "Marco Antonio Zanata Alves",
+      "André Grégio"
+     ],
+     "year": 2024,
+     "venue": "Anais do XXIV Simpósio Brasileiro de Segurança da Informação e de Sistemas Computacionais (SBSeg 2024)",
+     "links": [],
+     "bibtex": "@inproceedings{2024-SBSEG-Torres,\n  author = {Cl{\\'a}udio Torres J{\\'u}nior and\n                 Jorge Correia and\n                 Jo{\\~a}o Pincovscy and\n                 Marco Antonio Zanata Alves and\n                 Andr{\\'e} Gr{\\'e}gio},\n  title = {Observa{\\c{c}}{\\~a}o de Ataques contra a Mem{\\'o}ria do Kernel Android: Desafios e Solu{\\c{c}}{\\~o}es},\n  booktitle = {Anais do XXIV Simp{\\'o}sio Brasileiro de Seguran{\\c{c}}a da Informa{\\c{c}}{\\~a}o e de Sistemas Computacionais (SBSeg 2024)},\n  publisher = {Sociedade Brasileira de Computa{\\c{c}}{\\~a}o (SBC)},\n  year = {2024},\n}"
+    },
+    {
+     "key": "2024-CPAM-Pavam",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Para Além dos Dados Estáticos: Uma Abordagem de Aprendizado de Máquina Contínuo para o Nowcasting de Descargas Elétricas",
+     "authors": [
+      "Luis Guilherme Pavam Junior",
+      "Fernanda Ferreira Verdelho",
+      "Debora Terra Cachucho da Silva",
+      "Cesar A. A. Beneti",
+      "Luiz Eduardo Soares de Oliveira",
+      "Marco Antonio Zanata Alves"
+     ],
+     "year": 2024,
+     "venue": "Conferência Pan-Americana de Meteorologia (CPAM)",
+     "links": [],
+     "bibtex": "@inproceedings{2024-CPAM-Pavam,\n  author = {Luis Guilherme Pavam Junior and\n                 Fernanda Ferreira Verdelho and\n                 Debora Terra Cachucho da Silva and\n                 Cesar A. A. Beneti and\n                 Luiz Eduardo Soares de Oliveira and\n                 Marco Antonio Zanata Alves},\n  title = {Para Al{\\'e}m dos Dados Est{\\'a}ticos: Uma Abordagem de Aprendizado de M{\\'a}quina Cont{\\'\\i}nuo para o Nowcasting de Descargas El{\\'e}tricas},\n  booktitle = {Confer{\\^e}ncia Pan-Americana de Meteorologia (CPAM)},\n  address = {S{\\~a}o Paulo - Brazil},\n  year = {2024},\n}"
+    },
+    {
+     "key": "2024-EGU-Beneti",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Stream Machine Learning for Lightning Nowcasting - Harnessing the Power of Continuously Updated Data",
+     "authors": [
+      "Cesar A. A. Beneti",
+      "Luis Guilherme Pavam Junior",
+      "Luiz Eduardo Soares de Oliveira",
+      "Marco Antonio Zanata Alves",
+      "Leonardo Calvetti",
+      "Fernanda Ferreira Verdelho"
+     ],
+     "year": 2024,
+     "venue": "General Assembly 2024 of the European Geosciences Union (EGU)",
+     "links": [],
+     "bibtex": "@inproceedings{2024-EGU-Beneti,\n  author = {Cesar A. A. Beneti and\n                 Luis Guilherme Pavam Junior and\n                 Luiz Eduardo Soares de Oliveira and\n                 Marco Antonio Zanata Alves and\n                 Leonardo Calvetti and\n                 Fernanda Ferreira Verdelho},\n  title = {Stream Machine Learning for Lightning Nowcasting - Harnessing the Power of Continuously Updated Data},\n  booktitle = {General Assembly 2024 of the European Geosciences Union (EGU)},\n  address = {Vienna, Austria},\n  year = {2024},\n}"
+    },
+    {
+     "key": "2024-AMS-Pavam",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Predictive Intelligence for Lightning Events: A Machine Learning Solution to Mitigate Risks in Power Energy Operations",
+     "authors": [
+      "Luis Guilherme Pavam Junior",
+      "Cesar A. A. Beneti",
+      "Luiz Eduardo Soares de Oliveira",
+      "Marco Antonio Zanata Alves",
+      "Leonardo Calvetti"
+     ],
+     "year": 2024,
+     "venue": "104th AMS Annual Meeting (American Meteorological Society)",
+     "links": [],
+     "award": "3rd Place Oral",
+     "bibtex": "@inproceedings{2024-AMS-Pavam,\n  author = {Luis Guilherme Pavam Junior and\n                 Cesar A. A. Beneti and\n                 Luiz Eduardo Soares de Oliveira and\n                 Marco Antonio Zanata Alves and\n                 Leonardo Calvetti},\n  title = {Predictive Intelligence for Lightning Events: A Machine Learning Solution to Mitigate Risks in Power Energy Operations},\n  booktitle = {104th AMS Annual Meeting (American Meteorological Society)},\n  address = {Baltimore, MD, USA},\n  year = {2024},\n}"
     }
    ]
   },
@@ -759,6 +860,21 @@
      ],
      "kind": "Especialização",
      "bibtex": "@mastersthesis{2023-UFPR-Candido,\n  author = {Matheus Justino Candido},\n  title = {Estima{\\c{c}}{\\~a}o da quantidade de precipita{\\c{c}}{\\~a}o com algoritmos de aprendizado de m{\\'a}quina},\n  school = {UFPR},\n  type = {Especialização},\n  year = {2023},\n}"
+    },
+    {
+     "key": "2023-ERADRS-Pontte",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Proposta para o uso de Contadores de Performance em Hardware para detecção de Malware",
+     "authors": [
+      "Bruno Dal Pontte",
+      "Simone Dominico",
+      "Marco Antonio Zanata Alves"
+     ],
+     "year": 2023,
+     "venue": "Anais da XXIII Escola Regional de Alto Desempenho da Região Sul (ERAD-RS 2023)",
+     "links": [],
+     "bibtex": "@inproceedings{2023-ERADRS-Pontte,\n  author = {Bruno Dal Pontte and\n                 Simone Dominico and\n                 Marco Antonio Zanata Alves},\n  title = {Proposta para o uso de Contadores de Performance em Hardware para detec{\\c{c}}{\\~a}o de Malware},\n  booktitle = {Anais da XXIII Escola Regional de Alto Desempenho da Regi{\\~a}o Sul (ERAD-RS 2023)},\n  publisher = {Sociedade Brasileira de Computa{\\c{c}}{\\~a}o (SBC)},\n  year = {2023},\n}"
     }
    ]
   },

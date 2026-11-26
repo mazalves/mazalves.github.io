@@ -1,40 +1,40 @@
 {
  "termos": [
   {
-   "en": "computing",
-   "pt": "computing",
+   "en": "bypassing",
+   "pt": "bypassing",
    "n": 3,
-   "q": "computing"
+   "q": "bypassing"
   },
   {
-   "en": "compartilhada",
-   "pt": "compartilhada",
+   "en": "adaptable",
+   "pt": "adaptable",
    "n": 3,
-   "q": "compartilhada|compartilhadas"
+   "q": "adaptable"
   },
   {
-   "en": "array",
-   "pt": "array",
+   "en": "HPC",
+   "pt": "HPC",
    "n": 3,
-   "q": "array"
+   "q": "hpc"
   },
   {
-   "en": "accelerators",
-   "pt": "accelerators",
-   "n": 3,
-   "q": "accelerators"
-  },
-  {
-   "en": "HMC",
-   "pt": "HMC",
-   "n": 3,
-   "q": "hmc"
-  },
-  {
-   "en": "predictors",
-   "pt": "predictors",
+   "en": "real-time",
+   "pt": "tempo real",
    "n": 4,
-   "q": "predictors"
+   "q": "real-time"
+  },
+  {
+   "en": "operations",
+   "pt": "operations",
+   "n": 4,
+   "q": "operations"
+  },
+  {
+   "en": "monitoring",
+   "pt": "monitoring",
+   "n": 4,
+   "q": "monitoring"
   },
   {
    "en": "execution",
@@ -61,16 +61,16 @@
    "q": "precipitação|precipitation"
   },
   {
-   "en": "hardware",
-   "pt": "hardware",
-   "n": 5,
-   "q": "hardware"
-  },
-  {
    "en": "mechanisms",
    "pt": "mecanismos",
    "n": 6,
    "q": "mecanismo|mechanism"
+  },
+  {
+   "en": "energy",
+   "pt": "energia",
+   "n": 6,
+   "q": "energy"
   },
   {
    "en": "optimization",
@@ -93,14 +93,14 @@
   {
    "en": "instructions",
    "pt": "instruções",
-   "n": 9,
+   "n": 10,
    "q": "instruções|instructions|instruction"
   },
   {
-   "en": "applications",
-   "pt": "aplicações",
-   "n": 10,
-   "q": "applications|aplicações"
+   "en": "threads",
+   "pt": "threads",
+   "n": 11,
+   "q": "thread|threads"
   },
   {
    "en": "near-data",
@@ -121,28 +121,28 @@
    "q": "systems|system|sistemas|sistema"
   },
   {
+   "en": "efficiency",
+   "pt": "eficiência",
+   "n": 16,
+   "q": "efficient|efficiency|eficiente|eficiência"
+  },
+  {
    "en": "performance",
    "pt": "desempenho",
-   "n": 16,
+   "n": 17,
    "q": "performance|desempenho"
   },
   {
-   "en": "evaluation",
-   "pt": "avaliação",
-   "n": 16,
-   "q": "avaliação|evaluating|evaluation"
-  },
-  {
-   "en": "PIM",
-   "pt": "PIM",
-   "n": 16,
-   "q": "processing-in-memory|pim"
-  },
-  {
-   "en": "cache",
-   "pt": "cache",
+   "en": "machine learning",
+   "pt": "aprendizado de máquina",
    "n": 19,
-   "q": "cache|caches"
+   "q": "machine|aprendizado|aprendizagem|machines"
+  },
+  {
+   "en": "data",
+   "pt": "dados",
+   "n": 20,
+   "q": "data|dados"
   },
   {
    "en": "architecture",
@@ -153,7 +153,7 @@
   {
    "en": "memory",
    "pt": "memória",
-   "n": 39,
+   "n": 40,
    "q": "memory|memória|memories|memórias"
   },
   {
@@ -163,22 +163,22 @@
    "q": "processing|processamento"
   },
   {
-   "en": "data",
-   "pt": "dados",
-   "n": 18,
-   "q": "data|dados"
+   "en": "cache",
+   "pt": "cache",
+   "n": 19,
+   "q": "cache|caches"
   },
   {
-   "en": "efficiency",
-   "pt": "eficiência",
-   "n": 16,
-   "q": "efficient|efficiency|eficiente|eficiência"
+   "en": "evaluation",
+   "pt": "avaliação",
+   "n": 17,
+   "q": "avaliação|evaluating|evaluation"
   },
   {
-   "en": "machine learning",
-   "pt": "aprendizado de máquina",
+   "en": "PIM",
+   "pt": "PIM",
    "n": 16,
-   "q": "machine|aprendizado|aprendizagem|machines"
+   "q": "processing-in-memory|pim"
   },
   {
    "en": "simulation",
@@ -199,10 +199,10 @@
    "q": "análise|analysis"
   },
   {
-   "en": "threads",
-   "pt": "threads",
+   "en": "applications",
+   "pt": "aplicações",
    "n": 11,
-   "q": "thread|threads"
+   "q": "applications|aplicações"
   },
   {
    "en": "databases",
@@ -235,10 +235,10 @@
    "q": "nuvem|cloud"
   },
   {
-   "en": "energy",
-   "pt": "energia",
-   "n": 5,
-   "q": "energy"
+   "en": "hardware",
+   "pt": "hardware",
+   "n": 6,
+   "q": "hardware"
   },
   {
    "en": "hash",
@@ -265,40 +265,40 @@
    "q": "dataset"
   },
   {
-   "en": "monitoring",
-   "pt": "monitoring",
+   "en": "lightning",
+   "pt": "lightning",
    "n": 4,
-   "q": "monitoring"
+   "q": "lightning"
   },
   {
-   "en": "real-time",
-   "pt": "tempo real",
+   "en": "nowcasting",
+   "pt": "nowcasting",
    "n": 4,
-   "q": "real-time"
+   "q": "nowcasting"
   },
   {
-   "en": "HPC",
-   "pt": "HPC",
-   "n": 3,
-   "q": "hpc"
+   "en": "predictors",
+   "pt": "predictors",
+   "n": 4,
+   "q": "predictors"
   },
   {
-   "en": "adaptable",
-   "pt": "adaptable",
+   "en": "HMC",
+   "pt": "HMC",
    "n": 3,
-   "q": "adaptable"
+   "q": "hmc"
   },
   {
-   "en": "bypassing",
-   "pt": "bypassing",
+   "en": "accelerators",
+   "pt": "accelerators",
    "n": 3,
-   "q": "bypassing"
+   "q": "accelerators"
   },
   {
-   "en": "computer",
-   "pt": "computer",
+   "en": "array",
+   "pt": "array",
    "n": 3,
-   "q": "computer"
+   "q": "array"
   }
  ]
 }
