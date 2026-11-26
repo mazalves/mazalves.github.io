@@ -62,6 +62,6 @@
     {{ end }}
   {{ end }}
 </article>
-{{ $js := resources.Get "js/videos.js" | minify }}
+{{ $js := resources.Get "js/videos.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" defer></script>
 {{ end }}

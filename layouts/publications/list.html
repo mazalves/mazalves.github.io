@@ -66,6 +66,6 @@
   </p>
 </article>
 
-{{ $js := resources.Get "js/publicacoes.js" | minify }}
+{{ $js := resources.Get "js/publicacoes.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" defer></script>
 {{ end }}
