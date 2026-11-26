@@ -15,7 +15,7 @@
       let n = 0;
       section.querySelectorAll('.publication-item').forEach((item) => {
         const text = item.dataset.search || '';
-        const show = (filter === 'all' || item.dataset.category === filter) &&
+        const show = (filter === 'all' || (filter === 'award' ? item.dataset.award === '1' : item.dataset.category === filter)) &&
                      terms.every((t) => t.split('|').some((alt) => text.includes(alt)));
         item.hidden = !show;
         if (show) n++;
@@ -46,5 +46,9 @@
   });
   const q = new URLSearchParams(location.search).get('q');   // vindo da nuvem de palavras
   if (q && search) search.value = q;
+  if (new URLSearchParams(location.search).get('filtro') === 'premios') {
+    const b = page.querySelector('[data-filter="award"]');
+    if (b) b.click();
+  }
   update();
 })();

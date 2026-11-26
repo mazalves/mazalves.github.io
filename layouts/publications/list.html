@@ -14,6 +14,7 @@
       <button type="button" data-filter="abstract">{{ if $en }}Short papers & abstracts{{ else }}Resumos e trabalhos curtos{{ end }}</button>
       <button type="button" data-filter="software">{{ if $en }}Software & datasets{{ else }}Software e dados{{ end }}</button>
       <button type="button" data-filter="thesis">{{ if $en }}Theses{{ else }}Teses e dissertações{{ end }}</button>
+      <button type="button" data-filter="award">★ {{ if $en }}Awards{{ else }}Premiados{{ end }}</button>
     </div>
     <input type="search" class="publication-search" placeholder="{{ if $en }}Search title, author, venue, year…{{ else }}Buscar título, autor, veículo, ano…{{ end }}" aria-label="{{ if $en }}Search publications{{ else }}Buscar publicações{{ end }}">
     <p class="publication-filter-status" aria-live="polite"></p>
@@ -37,7 +38,7 @@
             {{ else if eq .type "mastersthesis" }}{{ $label = cond $en "MSc thesis" "Dissertação de mestrado" }}
             {{ if .kind }}{{ $label = .kind }}{{ end }}
             {{ end }}
-            <li class="publication-item" data-category="{{ .category }}" id="{{ .key }}" data-search="{{ printf "%s %s %s %v" .title (delimit .authors " ") .venue .year | lower }}">
+            <li class="publication-item" data-category="{{ .category }}"{{ if .award }} data-award="1"{{ end }} id="{{ .key }}" data-search="{{ printf "%s %s %s %v" .title (delimit .authors " ") .venue .year | lower }}">
               <div class="publication-title">{{ .title }}{{ with .award }} <span class="badge-award" title="{{ . }}">★ {{ . }}</span>{{ end }}{{ if eq .role "co" }} <span class="badge-co">{{ if $en }}co-advised{{ else }}coorientação{{ end }}</span>{{ end }}</div>
               <div class="publication-meta">
                 {{ with .authors }}<span>{{ delimit . "; " }}</span>{{ end }}
