@@ -1,5 +1,5 @@
 {
- "count": 170,
+ "count": 174,
  "years": [
   {
    "year": 2026,
@@ -222,6 +222,26 @@
      ],
      "kind": "Trabalho de Conclusão de Curso",
      "bibtex": "@mastersthesis{2026-UFPR-Wiedmer,\n  author = {Luiz Henrique Murback Wiedmer},\n  title = {An{\\'a}lise do Impacto do {LLC} no Desempenho de Sistemas com Mem{\\'o}rias {DDR5} e {HBM1}, 2, 3 e 4},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2026},\n}"
+    },
+    {
+     "key": "2026-UFPR-Krugel",
+     "type": "mastersthesis",
+     "category": "thesis",
+     "title": "Análise da influência das unidades funcionais compartilhadas em processadores com Simultaneous Multithreading",
+     "authors": [
+      "Bruno Krügel"
+     ],
+     "year": 2026,
+     "venue": "UFPR",
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2026-UFPR-Krugel.pdf",
+       "kind": "pdf"
+      }
+     ],
+     "kind": "Trabalho de Conclusão de Curso",
+     "bibtex": "@mastersthesis{2026-UFPR-Krugel,\n  author = {Bruno Kr{\\\"u}gel},\n  title = {An{\\'a}lise da influ{\\^e}ncia das unidades funcionais compartilhadas em processadores com {Simultaneous Multithreading}},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2026},\n}"
     }
    ]
   },
@@ -298,6 +318,26 @@
      ],
      "kind": "Especialização",
      "bibtex": "@mastersthesis{2025-UFPR-Nunes,\n  author = {Gustavo Valente Nunes},\n  title = {Data Lakehouse: avaliação de viabilidade econômica em implementações on-premise e nuvem},\n  school = {UFPR},\n  type = {Especialização},\n  year = {2025},\n}"
+    },
+    {
+     "key": "2025-UFPR-Goncalves",
+     "type": "mastersthesis",
+     "category": "thesis",
+     "title": "Análise de possíveis melhorias de desempenho através do uso de instruções de memória temporais e atemporais",
+     "authors": [
+      "Leonardo de Quadros Gonçalves"
+     ],
+     "year": 2025,
+     "venue": "UFPR",
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2025-UFPR-Goncalves.pdf",
+       "kind": "pdf"
+      }
+     ],
+     "kind": "Trabalho de Conclusão de Curso",
+     "bibtex": "@mastersthesis{2025-UFPR-Goncalves,\n  author = {Leonardo de Quadros Gon{\\c{c}}alves},\n  title = {An{\\'a}lise de poss{\\'\\i}veis melhorias de desempenho atrav{\\'e}s do uso de instru{\\c{c}}{\\~o}es de mem{\\'o}ria temporais e atemporais},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2025},\n}"
     }
    ]
   },
@@ -1641,6 +1681,26 @@
      ],
      "role": "co",
      "bibtex": "@mastersthesis{2022-UFPR-Furtado,\n  author = {Daniel Pimenta Furtado},\n  title = {Classificação de corais utilizando aprendizagem profunda},\n  school = {UFPR},\n  year = {2022},\n}"
+    },
+    {
+     "key": "2022-UFPR-Clementino",
+     "type": "mastersthesis",
+     "category": "thesis",
+     "title": "RECLOUD: ferramenta para monitoramento, tratamento e análise de comportamento em ambientes de nuvem",
+     "authors": [
+      "Douglas Affonso Clementino"
+     ],
+     "year": 2022,
+     "venue": "UFPR",
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2022-UFPR-Clementino.pdf",
+       "kind": "pdf"
+      }
+     ],
+     "kind": "Trabalho de Conclusão de Curso",
+     "bibtex": "@mastersthesis{2022-UFPR-Clementino,\n  author = {Douglas Affonso Clementino},\n  title = {{RECLOUD}: ferramenta para monitoramento, tratamento e an{\\'a}lise de comportamento em ambientes de nuvem},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2022},\n}"
     }
    ]
   },
@@ -2046,6 +2106,26 @@
      ],
      "kind": "Trabalho de Conclusão de Curso",
      "bibtex": "@mastersthesis{2021-UFPR-Tissei,\n  author = {Bruno Freitas Tissei},\n  title = {Representação de instruções x86 para simuladores com precisão de ciclos},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2021},\n}"
+    },
+    {
+     "key": "2021-UFPR-Cardoso",
+     "type": "mastersthesis",
+     "category": "thesis",
+     "title": "Avaliação do espaço para melhorias de políticas de substituição de linhas de cache",
+     "authors": [
+      "Marcelo Ferreira da Silva Cardoso"
+     ],
+     "year": 2021,
+     "venue": "UFPR",
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2021-UFPR-Cardoso.pdf",
+       "kind": "pdf"
+      }
+     ],
+     "kind": "Trabalho de Conclusão de Curso",
+     "bibtex": "@mastersthesis{2021-UFPR-Cardoso,\n  author = {Marcelo Ferreira da Silva Cardoso},\n  title = {Avalia{\\c{c}}{\\~a}o do espa{\\c{c}}o para melhorias de pol{\\'\\i}ticas de substitui{\\c{c}}{\\~a}o de linhas de cache},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2021},\n}"
     }
    ]
   },
@@ -2853,7 +2933,13 @@
      ],
      "year": 2019,
      "venue": "UFPR",
-     "links": [],
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2019-UFPR-Carmin.pdf",
+       "kind": "pdf"
+      }
+     ],
      "kind": "Trabalho de Conclusão de Curso",
      "bibtex": "@mastersthesis{2019-UFPR-Carmin,\n  author = {Mariana Carmin},\n  title = {Aceleração de quantificação de splices alternativos em genomas},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2019},\n}"
     },
@@ -2867,7 +2953,13 @@
      ],
      "year": 2019,
      "venue": "UFPR",
-     "links": [],
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2019-UFPR-Sokulski.pdf",
+       "kind": "pdf"
+      }
+     ],
      "kind": "Trabalho de Conclusão de Curso",
      "bibtex": "@mastersthesis{2019-UFPR-Sokulski,\n  author = {Rodrigo Machniewicz Sokulski},\n  title = {Avaliação de técnicas de otimização de memórias cache orientadas por preditores de linhas mortas},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2019},\n}"
     }
@@ -3477,7 +3569,13 @@
      ],
      "year": 2017,
      "venue": "UFPR",
-     "links": [],
+     "links": [
+      {
+       "label": "PDF",
+       "url": "/pdf/2017-UFPR-Cordeiro.pdf",
+       "kind": "pdf"
+      }
+     ],
      "kind": "Trabalho de Conclusão de Curso",
      "bibtex": "@mastersthesis{2017-UFPR-Cordeiro,\n  author = {Aline Santana Cordeiro},\n  title = {Intrinsics-HMC: geração automática de traços de simulação para arquiteturas de processamento em memória},\n  school = {UFPR},\n  type = {Trabalho de Conclusão de Curso},\n  year = {2017},\n}"
     }
