@@ -1,5 +1,5 @@
 {
- "count": 183,
+ "count": 195,
  "years": [
   {
    "year": 2026,
@@ -4421,6 +4421,23 @@
      "pages": "78--110",
      "note": "Texto do minicurso ministrado no WEAC 2008 (Campo Grande)",
      "bibtex": "@incollection{2012-WEAC-Alves,\n  author = {Marco A. Z. Alves and\n                 Henrique C. Freitas and\n                 Philippe O. A. Navaux},\n  title = {Ensino de arquiteturas de processadores many-core e mem{\\'o}rias cache utilizando o simulador Simics},\n  booktitle = {Arquitetura de Computadores: educa{\\c{c}}{\\~a}o, ensino e aprendizado},\n  publisher = {Sociedade Brasileira de Computa{\\c{c}}{\\~a}o (SBC)},\n  address = {Porto Alegre},\n  pages = {78--110},\n  note = {Texto do minicurso ministrado no WEAC 2008 (Campo Grande)},\n  year = {2012},\n  url = {http://www.ppgee.pucminas.br/weac/Livro/Livro-AC-EEA-v2.pdf},\n}"
+    },
+    {
+     "key": "2012-WSPPD-Cardozo",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Characterization of Cache Line False Sharing",
+     "authors": [
+      "Luciano T. Cardozo",
+      "Matthias Diener",
+      "Marco A. Z. Alves",
+      "Philippe O. A. Navaux"
+     ],
+     "year": 2012,
+     "venue": "X Workshop de Processamento Paralelo e Distribuído (WSPPD)",
+     "links": [],
+     "pages": "73--76",
+     "bibtex": "@inproceedings{2012-WSPPD-Cardozo,\n  author = {Luciano T. Cardozo and\n                 Matthias Diener and\n                 Marco A. Z. Alves and\n                 Philippe O. A. Navaux},\n  title = {Characterization of Cache Line False Sharing},\n  booktitle = {X Workshop de Processamento Paralelo e Distribu{\\'\\i}do (WSPPD)},\n  address = {Porto Alegre - RS},\n  publisher = {Evangraf},\n  pages = {73--76},\n  year = {2012},\n}"
     }
    ]
   },
@@ -4770,6 +4787,38 @@
       }
      ],
      "bibtex": "@inproceedings{2010-ERADRS-Ferreira,\n  author = {Manuela K. Ferreira and\n                 Felipe L. Madruga and\n                 Marco A. Z. Alves and\n                 Philippe O. A. Navaux},\n  title = {Estudo de Técnicas de Mapeamento de Processos em Arquiteturas Multiprocessadas},\n  booktitle = {Escola Regional de Alto Desempenho (ERAD-RS)},\n  year = {2010},\n}"
+    },
+    {
+     "key": "2010-WSPPD-Weber",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Evaluating Process Scheduling on Linux Operating System",
+     "authors": [
+      "Henrique Weber",
+      "Marco A. Z. Alves",
+      "Philippe O. A. Navaux"
+     ],
+     "year": 2010,
+     "venue": "VIII Workshop de Processamento Paralelo e Distribuído (WSPPD)",
+     "links": [],
+     "pages": "18--20",
+     "bibtex": "@inproceedings{2010-WSPPD-Weber,\n  author = {Henrique Weber and\n                 Marco A. Z. Alves and\n                 Philippe O. A. Navaux},\n  title = {Evaluating Process Scheduling on {Linux} Operating System},\n  booktitle = {VIII Workshop de Processamento Paralelo e Distribu{\\'\\i}do (WSPPD)},\n  address = {Porto Alegre},\n  publisher = {Evangraf},\n  pages = {18--20},\n  year = {2010},\n}"
+    },
+    {
+     "key": "2010-WSPPD-Moreira",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Simulating Scratchpad Memories for General Purpose Processors",
+     "authors": [
+      "Francis B. Moreira",
+      "Marco A. Z. Alves",
+      "Philippe O. A. Navaux"
+     ],
+     "year": 2010,
+     "venue": "VIII Workshop de Processamento Paralelo e Distribuído (WSPPD)",
+     "links": [],
+     "pages": "45--48",
+     "bibtex": "@inproceedings{2010-WSPPD-Moreira,\n  author = {Francis B. Moreira and\n                 Marco A. Z. Alves and\n                 Philippe O. A. Navaux},\n  title = {Simulating Scratchpad Memories for General Purpose Processors},\n  booktitle = {VIII Workshop de Processamento Paralelo e Distribu{\\'\\i}do (WSPPD)},\n  address = {Porto Alegre},\n  publisher = {Evangraf},\n  pages = {45--48},\n  year = {2010},\n}"
     }
    ]
   },
@@ -4874,6 +4923,22 @@
       }
      ],
      "bibtex": "@inproceedings{2009-ERADRS-Alves,\n  author = {Marco A. Z. Alves and\n                 Roberto P. Souto and\n                 Philippe O. A. Navaux},\n  title = {Avaliação de Escalabilidade do Modelo Atmosférico Global em Arquitetura Multi-Core},\n  booktitle = {Escola Regional de Alto Desempenho (ERAD-RS)},\n  year = {2009},\n}"
+    },
+    {
+     "key": "2009-ERADRS-Freitas",
+     "type": "incollection",
+     "category": "paper",
+     "title": "NoC e NUCA: Conceitos e Tendências para Arquiteturas Many-Core",
+     "authors": [
+      "Henrique C. Freitas",
+      "Marco A. Z. Alves",
+      "Philippe O. A. Navaux"
+     ],
+     "year": 2009,
+     "venue": "ERAD 2009 - 9ª Escola Regional de Alto Desempenho Multi-Core",
+     "links": [],
+     "pages": "5--37",
+     "bibtex": "@incollection{2009-ERADRS-Freitas,\n  author = {Henrique C. Freitas and\n                 Marco A. Z. Alves and\n                 Philippe O. A. Navaux},\n  title = {{NoC} e {NUCA}: Conceitos e Tend{\\^e}ncias para Arquiteturas {Many-Core}},\n  booktitle = {{ERAD 2009} - 9ª Escola Regional de Alto Desempenho Multi-Core},\n  publisher = {Instituto de Inform{\\'a}tica da UFRGS},\n  address = {Porto Alegre - RS},\n  pages = {5--37},\n  year = {2009},\n}"
     }
    ]
   },
@@ -4944,6 +5009,36 @@
       }
      ],
      "bibtex": "@inproceedings{2008-ERADRS-Freitas,\n  author = {Henrique C. Freitas and\n                 Marco A. Z. Alves and\n                 Philippe O. A. Navaux},\n  title = {Utilização de uma Metodologia de Projeto para Arquiteturas de Processadores Multi-Core},\n  booktitle = {Escola Regional de Alto Desempenho (ERAD-RS)},\n  year = {2008},\n}"
+    },
+    {
+     "key": "2008-WSPPD-Alves",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Investigation Through Set Associativity on Shared L2 Cache Memory in a Multi-Core Chip Architecture",
+     "authors": [
+      "Marco A. Z. Alves",
+      "Philippe O. A. Navaux"
+     ],
+     "year": 2008,
+     "venue": "VI Workshop de Processamento Paralelo e Distribuído (WSPPD)",
+     "links": [],
+     "bibtex": "@inproceedings{2008-WSPPD-Alves,\n  author = {Marco A. Z. Alves and\n                 Philippe O. A. Navaux},\n  title = {Investigation Through Set Associativity on Shared {L2} Cache Memory in a Multi-Core Chip Architecture},\n  booktitle = {VI Workshop de Processamento Paralelo e Distribu{\\'\\i}do (WSPPD)},\n  address = {Porto Alegre},\n  year = {2008},\n}"
+    },
+    {
+     "key": "2008-ERADRS-Alvesb",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Proposta de Avaliação de Memória Cache em Processadores Multi-Core",
+     "authors": [
+      "Marco A. Z. Alves",
+      "Henrique C. Freitas",
+      "Philippe O. A. Navaux"
+     ],
+     "year": 2008,
+     "venue": "8ª Escola Regional de Alto Desempenho (ERAD-RS)",
+     "links": [],
+     "pages": "143--144",
+     "bibtex": "@inproceedings{2008-ERADRS-Alvesb,\n  author = {Marco A. Z. Alves and\n                 Henrique C. Freitas and\n                 Philippe O. A. Navaux},\n  title = {Proposta de Avalia{\\c{c}}{\\~a}o de Mem{\\'o}ria Cache em Processadores Multi-Core},\n  booktitle = {8ª Escola Regional de Alto Desempenho (ERAD-RS)},\n  address = {Santa Cruz do Sul - RS},\n  pages = {143--144},\n  year = {2008},\n}"
     }
    ]
   },
@@ -4971,6 +5066,22 @@
       }
      ],
      "bibtex": "@inproceedings{2007-WSCAD-Alves,\n  author = {Marco A. Z. Alves and\n                 Henrique C. Freitas and\n                 Flávio R. Wagner and\n                 Philippe O. A. Navaux},\n  title = {Influência do Compartilhamento de Cache L2 em um Chip Multiprocessado sob Cargas de Trabalho com Conjuntos de Dados Contíguos e Não Contíguos},\n  booktitle = {8th Workshop em Sistemas Computacionais de Alto Desempenho (WSCAD)},\n  address = {Gramado - Brazil},\n  year = {2007},\n}"
+    },
+    {
+     "key": "2007-WSPPD-Alves",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Avaliação de um Chip Multiprocessado com Redes em Chip Implementado em FPGA",
+     "authors": [
+      "Marco A. Z. Alves",
+      "Philippe O. A. Navaux",
+      "Fernanda L. Kastensmidt"
+     ],
+     "year": 2007,
+     "venue": "V Workshop de Processamento Paralelo e Distribuído (WSPPD)",
+     "links": [],
+     "pages": "75--78",
+     "bibtex": "@inproceedings{2007-WSPPD-Alves,\n  author = {Marco A. Z. Alves and\n                 Philippe O. A. Navaux and\n                 Fernanda L. Kastensmidt},\n  title = {Avalia{\\c{c}}{\\~a}o de um Chip Multiprocessado com Redes em Chip Implementado em {FPGA}},\n  booktitle = {V Workshop de Processamento Paralelo e Distribu{\\'\\i}do (WSPPD)},\n  address = {Porto Alegre - RS},\n  publisher = {Evangraf},\n  pages = {75--78},\n  year = {2007},\n}"
     }
    ]
   },
@@ -4996,6 +5107,101 @@
       }
      ],
      "bibtex": "@inproceedings{2006-CNMAC-Alves,\n  author = {Marco A. Z. Alves and\n                 Erwin Doescher},\n  title = {Approximations of the poisson equation using numerical methods: performance and results},\n  booktitle = {29th Congresso Nacional de Matemática Aplicada Computacional (CNMAC)},\n  address = {Campinas - Brazil},\n  year = {2006},\n}"
+    }
+   ]
+  },
+  {
+   "year": 2005,
+   "items": [
+    {
+     "key": "2005-CIC-Alves",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Estudo e Comparação de Métodos Numéricos para Aproximação de Equações Diferenciais Ordinárias",
+     "authors": [
+      "Marco A. Z. Alves",
+      "Eduardo Doescher"
+     ],
+     "year": 2005,
+     "venue": "XVII Congresso de Iniciação Científica da UNESP",
+     "links": [],
+     "bibtex": "@inproceedings{2005-CIC-Alves,\n  author = {Marco A. Z. Alves and\n                 Eduardo Doescher},\n  title = {Estudo e Compara{\\c{c}}{\\~a}o de M{\\'e}todos Num{\\'e}ricos para Aproxima{\\c{c}}{\\~a}o de Equa{\\c{c}}{\\~o}es Diferenciais Ordin{\\'a}rias},\n  booktitle = {XVII Congresso de Inicia{\\c{c}}{\\~a}o Cient{\\'\\i}fica da UNESP},\n  address = {Presidente Prudente - SP},\n  year = {2005},\n}"
+    }
+   ]
+  },
+  {
+   "year": 2004,
+   "items": [
+    {
+     "key": "2004-CIC-Alves",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Uma Proposta de Mapeamento, Modelagem e Simulação de Processos em uma Empresa do Ramo Alimentício",
+     "authors": [
+      "Marco A. Z. Alves",
+      "João Pedro Magna Júnior",
+      "Klaus Schlünzen Júnior",
+      "Marcelo H. Shimabukuro"
+     ],
+     "year": 2004,
+     "venue": "XVI Congresso de Iniciação Científica da UNESP",
+     "links": [],
+     "bibtex": "@inproceedings{2004-CIC-Alves,\n  author = {Marco A. Z. Alves and\n                 Jo{\\~a}o Pedro Magna J{\\'u}nior and\n                 Klaus Schl{\\\"u}nzen J{\\'u}nior and\n                 Marcelo H. Shimabukuro},\n  title = {Uma Proposta de Mapeamento, Modelagem e Simula{\\c{c}}{\\~a}o de Processos em uma Empresa do Ramo Aliment{\\'\\i}cio},\n  booktitle = {XVI Congresso de Inicia{\\c{c}}{\\~a}o Cient{\\'\\i}fica da UNESP},\n  address = {Presidente Prudente - SP},\n  year = {2004},\n}"
+    },
+    {
+     "key": "2004-ENEPE-Alvesa",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Desenvolvendo Potencialidades Corporativas: Caminhando para uma Empresa Holística",
+     "authors": [
+      "Marco A. Z. Alves",
+      "João Pedro Magna Júnior",
+      "Klaus Schlünzen Júnior",
+      "Marcelo H. Shimabukuro"
+     ],
+     "year": 2004,
+     "venue": "ENEPE - Encontro de Ensino, Pesquisa e Extensão da Unoeste",
+     "links": [],
+     "bibtex": "@inproceedings{2004-ENEPE-Alvesa,\n  author = {Marco A. Z. Alves and\n                 Jo{\\~a}o Pedro Magna J{\\'u}nior and\n                 Klaus Schl{\\\"u}nzen J{\\'u}nior and\n                 Marcelo H. Shimabukuro},\n  title = {Desenvolvendo Potencialidades Corporativas: Caminhando para uma Empresa Hol{\\'\\i}stica},\n  booktitle = {ENEPE - Encontro de Ensino, Pesquisa e Extens{\\~a}o da Unoeste},\n  address = {Presidente Prudente - SP},\n  year = {2004},\n}"
+    },
+    {
+     "key": "2004-ENEPE-Alvesb",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Workflow - A Gestão do Fluxo de Trabalho em uma Empresa do Ramo Alimentício",
+     "authors": [
+      "Marco A. Z. Alves",
+      "João Pedro Magna Júnior",
+      "Klaus Schlünzen Júnior",
+      "Marcelo H. Shimabukuro"
+     ],
+     "year": 2004,
+     "venue": "ENEPE - Encontro de Ensino, Pesquisa e Extensão da Unoeste",
+     "links": [],
+     "bibtex": "@inproceedings{2004-ENEPE-Alvesb,\n  author = {Marco A. Z. Alves and\n                 Jo{\\~a}o Pedro Magna J{\\'u}nior and\n                 Klaus Schl{\\\"u}nzen J{\\'u}nior and\n                 Marcelo H. Shimabukuro},\n  title = {Workflow - A Gest{\\~a}o do Fluxo de Trabalho em uma Empresa do Ramo Aliment{\\'\\i}cio},\n  booktitle = {ENEPE - Encontro de Ensino, Pesquisa e Extens{\\~a}o da Unoeste},\n  address = {Presidente Prudente - SP},\n  year = {2004},\n}"
+    }
+   ]
+  },
+  {
+   "year": 2003,
+   "items": [
+    {
+     "key": "2003-FCT-Shimabukuro",
+     "type": "inproceedings",
+     "category": "abstract",
+     "title": "Suporte Computacional de Aprendizagem Organizacional e de Gestão de Conhecimento",
+     "authors": [
+      "Marcelo H. Shimabukuro",
+      "Klaus Schlünzen Júnior",
+      "João Pedro Magna Júnior",
+      "Marco A. Z. Alves",
+      "Osvaldo M. Fujita",
+      "Rodrigo A. O. Torrejón"
+     ],
+     "year": 2003,
+     "venue": "Anais do IV Fórum de Ciências da FCT - Grupos de Pesquisa: Diagnóstico e Perspectivas",
+     "links": [],
+     "bibtex": "@inproceedings{2003-FCT-Shimabukuro,\n  author = {Marcelo H. Shimabukuro and\n                 Klaus Schl{\\\"u}nzen J{\\'u}nior and\n                 Jo{\\~a}o Pedro Magna J{\\'u}nior and\n                 Marco A. Z. Alves and\n                 Osvaldo M. Fujita and\n                 Rodrigo A. O. Torrej{\\'o}n},\n  title = {Suporte Computacional de Aprendizagem Organizacional e de Gest{\\~a}o de Conhecimento},\n  booktitle = {Anais do IV F{\\'o}rum de Ci{\\^e}ncias da FCT - Grupos de Pesquisa: Diagn{\\'o}stico e Perspectivas},\n  address = {Presidente Prudente - SP},\n  year = {2003},\n}"
     }
    ]
   }

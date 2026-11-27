@@ -1,12 +1,6 @@
 {
  "termos": [
   {
-   "en": "adaptable",
-   "pt": "adaptable",
-   "n": 3,
-   "q": "adaptable"
-  },
-  {
    "en": "HPC",
    "pt": "HPC",
    "n": 3,
@@ -31,22 +25,28 @@
    "q": "monitoring"
   },
   {
-   "en": "execution",
-   "pt": "execution",
+   "en": "lightning",
+   "pt": "lightning",
    "n": 4,
-   "q": "execution"
+   "q": "lightning"
   },
   {
-   "en": "dataset",
-   "pt": "dataset",
+   "en": "desafios",
+   "pt": "desafios",
    "n": 4,
-   "q": "dataset"
+   "q": "desafios"
   },
   {
-   "en": "computation",
-   "pt": "computation",
+   "en": "coral",
+   "pt": "coral",
    "n": 4,
-   "q": "computation"
+   "q": "coral"
+  },
+  {
+   "en": "chip",
+   "pt": "chip",
+   "n": 4,
+   "q": "chip"
   },
   {
    "en": "DRAM",
@@ -111,14 +111,14 @@
   {
    "en": "processors",
    "pt": "processadores",
-   "n": 13,
+   "n": 15,
    "q": "processadores|processors|processor"
   },
   {
-   "en": "systems",
-   "pt": "sistemas",
-   "n": 15,
-   "q": "systems|system|sistemas|sistema"
+   "en": "simulation",
+   "pt": "simulação",
+   "n": 16,
+   "q": "simulator|simulação|simulation|simulador"
   },
   {
    "en": "efficiency",
@@ -127,22 +127,34 @@
    "q": "efficient|efficiency|eficiente|eficiência"
   },
   {
+   "en": "performance",
+   "pt": "desempenho",
+   "n": 19,
+   "q": "performance|desempenho"
+  },
+  {
    "en": "evaluation",
    "pt": "avaliação",
-   "n": 17,
+   "n": 20,
    "q": "avaliação|evaluating|evaluation"
   },
   {
-   "en": "machine learning",
-   "pt": "aprendizado de máquina",
-   "n": 19,
-   "q": "machine|aprendizado|aprendizagem|machines"
+   "en": "cache",
+   "pt": "cache",
+   "n": 22,
+   "q": "cache|caches"
   },
   {
-   "en": "data",
-   "pt": "dados",
-   "n": 20,
-   "q": "data|dados"
+   "en": "architecture",
+   "pt": "arquitetura",
+   "n": 26,
+   "q": "arquiteturas|architecture|architectures|arquitetura"
+  },
+  {
+   "en": "memory",
+   "pt": "memória",
+   "n": 43,
+   "q": "memory|memória|memories|memórias"
   },
   {
    "en": "processing",
@@ -151,28 +163,16 @@
    "q": "processing|processamento"
   },
   {
-   "en": "memory",
-   "pt": "memória",
-   "n": 40,
-   "q": "memory|memória|memories|memórias"
+   "en": "data",
+   "pt": "dados",
+   "n": 20,
+   "q": "data|dados"
   },
   {
-   "en": "architecture",
-   "pt": "arquitetura",
-   "n": 24,
-   "q": "arquiteturas|architectures|architecture|arquitetura"
-  },
-  {
-   "en": "cache",
-   "pt": "cache",
-   "n": 19,
-   "q": "cache|caches"
-  },
-  {
-   "en": "performance",
-   "pt": "desempenho",
-   "n": 19,
-   "q": "performance|desempenho"
+   "en": "machine learning",
+   "pt": "aprendizado de máquina",
+   "n": 20,
+   "q": "machine|aprendizado|aprendizagem|machines"
   },
   {
    "en": "PIM",
@@ -181,16 +181,16 @@
    "q": "processing-in-memory|pim"
   },
   {
-   "en": "simulation",
-   "pt": "simulação",
-   "n": 15,
-   "q": "simulator|simulação|simulation|simulador"
-  },
-  {
    "en": "multi-core",
    "pt": "multi-core",
-   "n": 14,
+   "n": 16,
    "q": "multi-core|multicore"
+  },
+  {
+   "en": "systems",
+   "pt": "sistemas",
+   "n": 16,
+   "q": "systems|system|sistemas|sistema"
   },
   {
    "en": "analysis",
@@ -213,7 +213,7 @@
   {
    "en": "mapping",
    "pt": "mapeamento",
-   "n": 9,
+   "n": 10,
    "q": "mapping|mapeamento"
   },
   {
@@ -259,22 +259,28 @@
    "q": "simd"
   },
   {
-   "en": "coral",
-   "pt": "coral",
+   "en": "computation",
+   "pt": "computation",
    "n": 4,
-   "q": "coral"
+   "q": "computation"
   },
   {
-   "en": "desafios",
-   "pt": "desafios",
+   "en": "dataset",
+   "pt": "dataset",
    "n": 4,
-   "q": "desafios"
+   "q": "dataset"
   },
   {
-   "en": "lightning",
-   "pt": "lightning",
+   "en": "execution",
+   "pt": "execution",
    "n": 4,
-   "q": "lightning"
+   "q": "execution"
+  },
+  {
+   "en": "many-core",
+   "pt": "many-core",
+   "n": 4,
+   "q": "many-core"
   },
   {
    "en": "nowcasting",
@@ -293,12 +299,6 @@
    "pt": "HMC",
    "n": 3,
    "q": "hmc"
-  },
-  {
-   "en": "accelerators",
-   "pt": "accelerators",
-   "n": 3,
-   "q": "accelerators"
   }
  ]
 }
