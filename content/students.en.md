@@ -1,5 +1,6 @@
 ---
 title: "New Researchers"
+description: "Openings and advising for new researchers in computer architecture and high-performance computing at UFPR."
 draft: false
 ---
 <img width="640" height="284" src="/img/grupo.jpg" alt="Research Group" loading="lazy" />											

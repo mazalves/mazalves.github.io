@@ -1,5 +1,6 @@
 ---
 title: "Ensino"
+description: "Disciplinas de graduação e pós-graduação ministradas na UFPR: arquitetura de computadores, organização, sistemas de memória e HPC."
 draft: false
 aliases:
   - "/ensino/"

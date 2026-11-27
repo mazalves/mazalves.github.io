@@ -1,5 +1,6 @@
 ---
 title: "Publications"
+description: "Papers, abstracts, software, theses and dissertations by Marco Antonio Zanata Alves and the HiPES group, with search, filters and BibTeX."
 draft: false
 aliases:
   - "/production/"

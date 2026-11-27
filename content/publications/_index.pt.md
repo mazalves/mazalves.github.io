@@ -1,5 +1,6 @@
 ---
 title: "Publicações"
+description: "Artigos, resumos, software, teses e dissertações de Marco Antonio Zanata Alves e do grupo HiPES, com busca, filtros e BibTeX."
 draft: false
 aliases:
   - "/publi/"

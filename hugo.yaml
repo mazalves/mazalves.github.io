@@ -70,12 +70,17 @@ languages:
           weight: 8
 
 enableRobotsTXT: true
+disableKinds: ["taxonomy", "term"]
 
 params:
   description: "Professor e pesquisador no Departamento de Informática da Universidade Federal do Paraná."
   institution: "Universidade Federal do Paraná (UFPR)"
   department: "Departamento de Informática"
   author: "Marco Antonio Zanata Alves"
+  home_title: "Marco Antonio Zanata Alves — Arquitetura de Computadores e HPC · UFPR"
+  home_title_en: "Marco Antonio Zanata Alves — Computer Architecture & HPC · UFPR"
+  og_image: "/img/og.jpg"
+  google_verification: "ezjFojZVsMyPC4YgQZmYXUYZhG2D5kAMd_GbOkGPQnU"
   orcid: "0000-0003-2440-2664"
   lattes: "http://lattes.cnpq.br/7011183305034415"
   dblp: "https://dblp.org/pid/47/7939"

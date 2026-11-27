@@ -1,5 +1,6 @@
 ---
 title: "Iniciação Científica"
+description: "Iniciação científica em arquitetura de computadores e HPC no grupo HiPES, UFPR."
 draft: false
 aliases:
   - "/iniciacao-cientifica/"

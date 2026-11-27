@@ -1,5 +1,6 @@
 ---
 title: "Novos Pesquisadores"
+description: "Vagas e orientações para novos pesquisadores em arquitetura de computadores e computação de alto desempenho na UFPR."
 draft: false
 aliases:
   - "/novos-alunos/"

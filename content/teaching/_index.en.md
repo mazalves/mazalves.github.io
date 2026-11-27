@@ -1,5 +1,6 @@
 ---
 title: "Teaching"
+description: "Undergraduate and graduate courses taught at UFPR: computer architecture, organization, memory systems and HPC."
 draft: false
 ---
 

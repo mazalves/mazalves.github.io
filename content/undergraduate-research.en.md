@@ -1,5 +1,6 @@
 ---
 title: "Undergraduate Research"
+description: "Undergraduate research in computer architecture and HPC at the HiPES group, UFPR."
 draft: false
 aliases:
   - "/en/undergraduate-research/"

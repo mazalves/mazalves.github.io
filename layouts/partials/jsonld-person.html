@@ -1,0 +1,19 @@
+{{/* Dados estruturados (schema.org/Person) — ajuda o Google a ligar o site ao autor. */}}
+{{ $p := site.Params }}
+{{ $same := slice (printf "https://orcid.org/%s" $p.orcid) $p.lattes $p.dblp $p.scholar $p.researchgate }}
+{{ with $p.github }}{{ $same = $same | append . }}{{ end }}
+{{ $en := eq .Language.Lang "en" }}
+{{ $data := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $p.author
+  "alternateName" (slice "Marco A. Z. Alves" "Marco Antonio Z. Alves" "M. A. Z. Alves")
+  "url" site.Home.Permalink
+  "image" ("/img/retrato.jpg" | absURL)
+  "jobTitle" (cond $en "Associate Professor of Computer Science" "Professor Adjunto de Ciência da Computação")
+  "affiliation" (dict "@type" "CollegeOrUniversity" "name" "Universidade Federal do Paraná" "alternateName" "UFPR" "url" "https://www.ufpr.br")
+  "worksFor" (dict "@type" "CollegeOrUniversity" "name" "Universidade Federal do Paraná")
+  "sameAs" $same
+  "knowsAbout" (slice "Computer architecture" "High-performance computing" "Processing-in-memory" "Memory systems" "Computer architecture simulation" "Arquitetura de computadores" "Computação de alto desempenho")
+}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>

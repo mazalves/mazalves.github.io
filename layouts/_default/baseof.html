@@ -3,20 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ .Description | default .Site.Params.description }}">
-  {{ $description := .Description | default .Site.Params.description }}
-  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-  <meta property="og:title" content="{{ .Title }} · {{ .Site.Title }}">
+  {{ $summary := "" }}
+  {{ if eq .Section "courses" }}{{ $summary = cond (eq .Language.Lang "en") (printf "Course material: %s — Marco Antonio Zanata Alves, UFPR." .Title) (printf "Material da disciplina: %s — Marco Antonio Zanata Alves, UFPR." .Title) }}{{ end }}
+  {{ $description := .Description | default $summary | default .Site.Params.description }}
+  {{ $en := eq .Language.Lang "en" }}
+  {{ $pageTitle := cond .IsHome (cond $en (.Site.Params.home_title_en | default .Site.Title) (.Site.Params.home_title | default .Site.Title)) (printf "%s · %s" .Title .Site.Title) }}
+  {{ $img := (.Params.image | default .Site.Params.og_image | default "/img/og.jpg") | absURL }}
+  <title>{{ $pageTitle }}</title>
+  <meta name="description" content="{{ $description }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0b3d6b">
+  {{ with .Site.Params.google_verification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+  <meta property="og:type" content="{{ if .IsHome }}profile{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ $pageTitle }}">
   <meta property="og:description" content="{{ $description }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:locale" content="{{ if eq .Language.Lang "pt" }}pt_BR{{ else }}en_US{{ end }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ .Title }} · {{ .Site.Title }}">
+  <meta property="og:locale" content="{{ if $en }}en_US{{ else }}pt_BR{{ end }}">
+  <meta property="og:image" content="{{ $img }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $pageTitle }}">
   <meta name="twitter:description" content="{{ $description }}">
+  <meta name="twitter:image" content="{{ $img }}">
   <link rel="canonical" href="{{ .Permalink }}">
+  {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+  {{ end }}{{ range .AllTranslations }}{{ if eq .Language.Lang "pt" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}{{ end }}
   {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+  <link rel="icon" href="{{ "/img/favicon.png" | relURL }}" type="image/png">
+  {{ if .IsHome }}{{ partial "jsonld-person.html" . }}{{ end }}
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 </head>
