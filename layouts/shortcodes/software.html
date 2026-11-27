@@ -1,0 +1,15 @@
+{{- /* Lista de software: data/software.json */ -}}
+{{- $en := eq site.Language.Lang "en" -}}
+<div class="software-list">
+{{- range sort site.Data.software.software "destaque" "desc" }}
+  <article class="software-item">
+    <h3><a href="{{ .url }}" target="_blank" rel="noopener">{{ .nome }}</a>{{ with .linguagem }} <span class="software-lang">{{ . }}</span>{{ end }}</h3>
+    <p>{{ if $en }}{{ .descricao_en | default .descricao }}{{ else }}{{ .descricao }}{{ end }}</p>
+    <p class="software-links">
+      <a href="{{ .url }}" target="_blank" rel="noopener">GitHub</a>
+      {{ with .docs }}<a href="{{ . }}" target="_blank" rel="noopener">{{ if $en }}Docs{{ else }}Documentação{{ end }}</a>{{ end }}
+      {{ range .papers }}<a href="{{ site.Home.RelPermalink }}{{ if $en }}en/{{ end }}publications/#{{ . }}">{{ if $en }}Paper{{ else }}Artigo{{ end }}</a>{{ end }}
+    </p>
+  </article>
+{{- end }}
+</div>

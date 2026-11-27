@@ -1,0 +1,44 @@
+{
+ "_aviso": "Software e repositórios. Edite à mão. 'papers' = chaves do .bib (ANO-SIGLA-Sobrenome), viram links para a página de publicações. 'destaque': true aparece primeiro.",
+ "software": [
+  {
+   "nome": "SiNUCA3",
+   "url": "https://github.com/hipes-ufpr/SiNUCA3",
+   "docs": "https://github.com/hipes-ufpr/SiNUCA3-docs",
+   "linguagem": "C++",
+   "destaque": true,
+   "descricao": "Terceira geração do Simulator of Non-Uniform Cache Architectures: simulador microarquitetural do grupo HiPES, em desenvolvimento ativo.",
+   "descricao_en": "Third generation of the Simulator of Non-Uniform Cache Architectures: the HiPES group's microarchitectural simulator, under active development.",
+   "papers": ["2025-ERADRS-Brito"]
+  },
+  {
+   "nome": "SiNUCA",
+   "url": "https://github.com/mazalves/sinuca",
+   "linguagem": "C++",
+   "descricao": "Simulador de arquiteturas de cache não uniformes (NUCA) e de microarquiteturas multi-core, validado contra hardware real.",
+   "descricao_en": "Simulator for Non-Uniform Cache Architectures (NUCA) and multi-core microarchitectures, validated against real hardware.",
+   "papers": ["2015-HPCC-Alves"]
+  },
+  {
+   "nome": "OrCS",
+   "url": "https://github.com/mazalves/OrCS",
+   "linguagem": "Python",
+   "descricao": "Ferramenta de apoio a simulação e exploração de arquiteturas.",
+   "descricao_en": "Tool supporting simulation and architecture exploration."
+  },
+  {
+   "nome": "microbenchmarks",
+   "url": "https://github.com/mazalves/microbenchmarks",
+   "linguagem": "C",
+   "descricao": "Microbenchmarks para avaliar detalhes arquiteturais de processadores e memórias.",
+   "descricao_en": "Microbenchmarks to evaluate architectural details of processors and memories."
+  },
+  {
+   "nome": "SMTBench",
+   "url": "https://github.com/hipes-ufpr/bk-SMTBench",
+   "linguagem": "Python",
+   "descricao": "Benchmark para avaliar e analisar o desempenho de Simultaneous Multithreading (SMT).",
+   "descricao_en": "Benchmark designed to evaluate and analyze Simultaneous Multithreading (SMT) performance."
+  }
+ ]
+}

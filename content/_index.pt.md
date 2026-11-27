@@ -42,6 +42,7 @@ Coordeno o **HiPES — High Performance and Efficient Systems**, grupo de pesqui
 - **Lattes:** [Currículo Lattes](https://lattes.cnpq.br/7011183305034415)
 - **Google Scholar:** [Perfil](https://scholar.google.com/citations?user=zhYsRbcAAAAJ)
 - **DBLP:** [Perfil](https://dblp.org/pid/47/7939)
+- **GitHub:** [mazalves](https://github.com/mazalves) · [hipes-ufpr](https://github.com/hipes-ufpr)
 - **ResearchGate:** [Marco-Alves-5](https://www.researchgate.net/profile/Marco-Alves-5)
 
 Departamento de Informática, Gabinete 86 — Centro Politécnico, UFPR, Curitiba, Paraná, Brasil.

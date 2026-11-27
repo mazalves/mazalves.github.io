@@ -46,6 +46,12 @@ My research investigates how to design more efficient computing architectures an
 
 </div>
 
+## Software and repositories
+
+Open-source code from the group and myself, on my [personal GitHub](https://github.com/mazalves) and the [HiPES GitHub](https://github.com/hipes-ufpr).
+
+{{< software >}}
+
 ## HiPES — High Performance and Efficient Systems
 
 <style>

@@ -46,6 +46,12 @@ Minha pesquisa explora como projetar arquiteturas e sistemas computacionais mais
 
 </div>
 
+## Software e repositórios
+
+Código aberto do grupo e meu, no [GitHub pessoal](https://github.com/mazalves) e no [GitHub do HiPES](https://github.com/hipes-ufpr).
+
+{{< software >}}
+
 ## HiPES — High Performance and Efficient Systems
 
 <style>

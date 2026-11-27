@@ -192,3 +192,13 @@ a:focus-visible {
 .nuvem-w.t2 { color: #2f6f9f; }
 .nuvem-w.t3 { color: #5f7a90; font-weight: 500; }
 .nuvem-nota { color: var(--muted); font-size: .85rem; text-align: center; }
+.publication-note { color: var(--muted); font-style: italic; }
+
+/* Software */
+.software-list { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); margin: 1rem 0 2rem; }
+.software-item { padding: 1rem; border: 1px solid var(--border, #ddd); border-radius: 10px; }
+.software-item h3 { margin: 0 0 .3rem; font-size: 1.1rem; }
+.software-item p { margin: .3rem 0; font-size: .95rem; }
+.software-lang { font-size: .75rem; font-weight: 500; color: var(--muted); border: 1px solid currentColor; border-radius: 999px; padding: 0 .45rem; vertical-align: middle; }
+.software-links a + a::before { content: " · "; color: var(--muted); }
+.software-links a { text-decoration: none; }

@@ -42,6 +42,7 @@ I coordinate **HiPES — High Performance and Efficient Systems**, a research gr
 - **Lattes:** [Curriculum](https://lattes.cnpq.br/7011183305034415)
 - **Google Scholar:** [Profile](https://scholar.google.com/citations?user=zhYsRbcAAAAJ)
 - **DBLP:** [Profile](https://dblp.org/pid/47/7939)
+- **GitHub:** [mazalves](https://github.com/mazalves) · [hipes-ufpr](https://github.com/hipes-ufpr)
 - **ResearchGate:** [Marco-Alves-5](https://www.researchgate.net/profile/Marco-Alves-5)
 
 Department of Informatics, Office 86 — Polytechnic Center, UFPR, Curitiba, Paraná, Brazil.
